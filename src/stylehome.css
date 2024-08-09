@@ -1,0 +1,121 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color:cornsilk;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo do cabeçalho */
+.header {
+    background-color: #fdd663;
+    color:#fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    height: 50px; /* Ajuste conforme necessário */
+}
+
+.header nav a {
+    color:black;
+    text-decoration: none;
+    margin: 0 15px;
+    
+}
+
+
+.header nav a:hover {
+    text-decoration:underline;
+}
+
+/* Estilo do conteúdo principal */
+.conteudo {
+    padding: 2rem;
+}
+
+.conteudo h1 {
+    margin-bottom: 1rem;
+}
+
+.conteudo h3 {
+    margin-top: 2rem;
+}
+
+.conteudo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilo do menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 1rem;
+}
+
+nav ul li.menu-item {
+    position: relative;
+}
+
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 1rem;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+nav ul li .dropdown a {
+    color: #343a40;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+nav ul li .dropdown a:hover {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+/* Adiciona um espaço no final do conteúdo */
+.conteudo .card {
+    margin-top: 2rem;
+}
+.card{
+    width: 600%;
+    margin: auto;
+    background-color:#e095729a;
+    padding: 20px;
+}
+h3, h2, h1, h4, h5, h6{
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
