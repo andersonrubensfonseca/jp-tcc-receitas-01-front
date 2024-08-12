@@ -1,134 +1,221 @@
 <!DOCTYPE html>
-<!--Home.HTML-->
 <html lang="pt-br">
-    <head>
-
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title> Delícias na Cozinha </title>
-        <p>Bem vindo a página com as mais deliciosas receitas.</p>
-       
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
-        <link rel="stylesheet" href="./stylehome.css">
-
-    </head>
-    <body>
-        <div class="header">
-        <br>
-          
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delícias na Cozinha</title>
+   
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Delícias na Cozinha</h1>
         <nav>
-            <a href="./home.html">Início</a>
-            <a href="./receitas.html">Receitas</a>
-            <P>Faça Login: <br><a href="./login.html">Login</a></P>
-            <p>Entre na conta caso já tenha: <br> </p><a href="#">Inscreva-se</a></p>
-        
-        </div>
-
-           <br>
-        </header>
+            <a href="home.html">Início</a>
+            <div class="menu-item">
+                <a href="recipes.html">Receitas</a>
+                <div class="dropdown">
+                    <a href="doces.html">Receitas Doces</a>
+                    <a href="salgados.html">Receitas Salgadas</a>
+                    <a href="carnes.html">Carnes</a>
+                </div>
+            </div>
+            <a href="login.html">Login</a>
         </nav>
-      
+    </header>
+   
+
+    <main>
+        <p><h4>Bem-vindo ao Delícias na Cozinha!</h4></p>
+        <p>Crie uma conta ou faça login para contribuir com suas receitas favoritas.</p>
+        <a href="cadastro.html" class="button">Criar Conta</a>
         
-            <p><h4>
-                Delícias na Cozinha
-            </h4></p>
-            <nav>
-                <ul>
-                    <li class="menu-item">Receitas Doces
-                        <div class="dropdown">
-                            <a href="Bolo de Chocolate">Bolo de Chocolate</a></li>
-                            <li><a href="Pudim">Pudim</a>
-                                <!--Colocar aqui mais-->
+        
+        <h2>VEJA AS NOSSA PRINCIPAIS RECEITAS:</h2>
+        <br>
+        
+        <section id="doces">
+            <div class="recipes-container">
+                <div class="recipe">
+                    <h2>Bolo de Chocolate</h2>
+                    <img src="https://static.itdg.com.br/images/640-400/5df1a91c8a4ea09243af6822b9970314/318292-original.jpg" alt="Bolo de Chocolate">
+                    <p>Um bolo de chocolate fofinho, rápido e simples de fazer junto com uma xícara de café às vezes é tudo que a gente precisa para curar onde dói em uma tarde chuvosa. Essa receita é prática e não precisa de batedeira, sendo feita no liquidificador. Para garantir que o bolo de chocolate cresça e fique macio como a gente gosta, é importante que a gente respeite o tempo de bater a massa no eletrodoméstico indicado na receita. Isso permite que as fibras da farinha criem a trama que segura as bolhas criadas pelo fermento e que garantem o crescimento do bolo. A calda de calda de chocolate cobre o bolo finalizando tudo e deixando ainda mais delicioso. Se você quiser completar, pode adicionar chocolate granulado ao topo para o bolo ficar bem "chocolatudo". Não esqueça de untar a forma para que o bolo saia por inteiro e depois de 40 minutos, você terá o melhor bolo de chocolate saindo do seu forno.  </p>
+                    <div class="card">
+                        <h2>INGREDIENTES:</h2>
+                        <ul>
 
-                            </div></li>
-                        <li class="menu-item">
-                            Receitas Salgadas
-                            <div class="dropdown">
-                                <a href="#">Lasagna</a>
-                                <a href="#">Feijoada</a>
-                                <a href="#">Coxinha</a>
-                                <!--Colocar aqui mais-->
+                            <h3>Massa:</h3>
 
-                            </div>
-                            
-                        </li>
-                        <br>
-                        <h1>Veja as nossas principais receitas:</h1>
-                        <br>
+                            <li>4 ovos</li>
+                            <li>2 colheres (sopa) de manteiga</li>
+                            <li>2 xícaras (chá) de açúcar</li>
+                            <li>1 xícara (chá) de leite</li>
+                            <li4> colheres (sopa) de chocolate em pó</li>
+                            <li>3 xícaras (chá) de farinha de trigo</li>
+                            <li>2 colheres (sopa) de fermento</li>
 
+                            <h3>Calda:</h3>
+
+                            <li>2 colheres (sopa) de manteiga</li>
+                            <li>2 latas de creme de leite com soro</li>
+                            <li>7 colheres (sopa) de chocolate em pó</li>
+                            <li>3 colheres (sopa) de açúcar</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h2>MODO DE PREPARO: 40 mins</h2>
                         
-                    
+                        <ol>
+                            <h3>Massa:</h3>
 
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="Doces">
-                <!--Adicionar as receitas aqui-->
-                <h2>Bolo de Chocolate</h2>
-                <img src="" alt="">
-                <br>
-                <h4>Ingredientes:</h4>
-                <ul>
-                    <li></li>
-                    <li>
-                    </li>
-                    <li></li>
-                    <li>
+                            <li>Em um liquidificador adicione os ovos, o chocolate em pó, a manteiga, a farinha de trigo, o açúcar e o leite, depois bata por 5 minutos.</li>
+                            <li>Adicione o fermento e misture com uma espátula delicadamente.</li>
+                            <li>Em uma forma untada, despeje a massa e asse em forno médio (180 ºC) preaquecido por cerca de 40 minutos. Não se esqueça de usar uma forma alta para essa receita: como leva duas colheres de fermento, ela cresce bastante! Outra solução pode ser colocar apenas uma colher de fermento e manter a sua receita em uma forma pequena.</li>
+                                
+                            <h3>Calda</h3>
 
-                    </li>
-                    <li></li>
-                    </ul>
-                    <br>
-                    <h4>Modo de Preparo:</h4>
-                    <ol>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                            <li>Em uma panela, aqueça a manteiga e misture o chocolate em pó até que esteja homogêneo.</li>
+                            <li>Acrescente o creme de leite e misture bem até obter uma consistência cremosa.</li>
+                            <li>Desligue o fogo e acrescente o açúcar.</li>
+                        </ol>
+                    </div>
+                    <h2>Pudim de leite de condensado</h2>
+                    <img src="https://s2-receitas.glbimg.com/jK-kMTPr3Yzex9P93zqt4DSsFXo=/0x0:1366x768/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2023/z/0/RsipkzTEu0Y1PGiavCpA/pudim-de-leite-condensado.jpg">
+                   <p>Quem não gostaria de surpreender a todos com um pudim lisinho? Nesta receita você aprende a técnica simples e fácil para conseguir um pudim sem furinhos. Confira o passo a passo!.</p>
+                    <div class="card">
+                        <h2>INGREDIENTES:</h2>
+                        <ul>
+                            <li>6 colheres de sopa de açúcar</li>
+                            <li>1 lata de leite condensado</li>
+                            <li>1 lata de leite, use a mesma medida do leite condensado</li>
+                            <li>3 ovos</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h2>MODO DE PREPARO:</h2>
+                        <ol>
+                            <li>Numa forma para pudim, de 20 centímetros de diâmetro, coloque 6 colheres de sopa de açúcar e leve ao fogo médio até virar uma calda caramelada, por mais ou menos 3 minutos.</li>
+                            <li>Retire do fogo e vá virando a fôrma, de modo que a calda forre todo o fundo e lateral da mesma. Reserve.</li>
+                            <li>Num liquidificador coloque uma lata de leite condensado, uma lata de leite, a mesma medida da lata de leite condensado, e 3 ovos e bata bem por mais ou menos 1 minuto.</li>
+                            <li>Desligue o liquidificador e deixe a mistura descansar por 15 minutos.</li>
+                            <li>Com esta espera a espuma fica sobre a superfície, o pudim fica sem furinhos, mas macio.</li>
+                            <li>Com a ajuda de uma colher segure a espuma que está na superfície e despeje o conteúdo do liquidificador, com cuidado, na fôrma caramelada reservada acima e leve ao forno médio, em banho-maria, a 180 graus Celsius por uma hora e meia.</li>
+                            <li>Retire do forno, deixe esfriar e leve à geladeira por mais ou menos duas horas. Desenforme e sirva em seguida.</li>
 
-                    </ol>
-                    <br>
-            </section>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                
-            <section id="Salgados">
-                <!--Adicionar a receita aqui-->
+        <section id="salgadas">
+            <div class="recipe">
                 <h2>Coxinha</h2>
-                <img src="" alt="">
-                <br>
-                <h4>Ingredientes:</h4>
-                <ul>
-                    <li></li>
-                    <li>
-                    </li>
-                    <li></li>
-                    <li>
+                <img src="https://cdn0.tudoreceitas.com/pt/posts/1/9/1/coxinha_simples_191_600.webp">
+                <p>Quem resiste a uma coxinha de frango simples? Esse quitute brasileiro é econômico, delicioso e ideal para servir em uma festa ou para vender, pois agrada a todo o mundo!Descubra como fazer massa de coxinha que não estoura na hora de fritar e que não fica com sabor forte de farinha. Mostramos também como temperar frango desfiado para garantir um recheio de coxinha extra gostoso, assim suas coxinhas caseiras terão tudo para fazer o maior sucesso!</p>
+                <div class="card">
+                    <h2>INGREDIENTES:</h2>
+                    <ul>
 
-                    </li>
-                    <li></li>
+                        <h3>Massa:</h3>
+
+                        <li> 3 xícaras de farinha de trigo (420 gramas)</li>
+                        <li> 3 xícaras de leite (720 mililitros)</li>
+                        <li> 2 colheres de sopa de manteiga</li>
+                        <li>1 xícara (chá) de leite</li>
+                        <li4> 1 tablete de caldo de galinha</li>
+                        <li> 1 colher de chá de sal</li>
+                        <li> 1 cebola picada</li>
+                        <li> 3 colheres de sopa de cheiro verde picado</li>
+                        <li> 4 colheres de sopa de requeijão cremoso </li>
+                        <li> 1 colher de sopa de azeite de oliva</li>
+                        <li>Pimenta do reino</li>
+                        <li>Sal</li>
+
+                        <h3>Para o recheio:</h3>
+
+                        <li> 500 gramas de peito de frango cozido e desfiado</li>
+                        <li> 2 tomates maduros picados</li>
+
+                        <h3>Para empanar e fritar:</h3>
+
+                        <li> ½ xícara de leite (120 mililitros)</li>
+                        <li> 1 xícara de farinha de rosca</li>
+                        <li>óleo para fritar</li>
                     </ul>
-                    <br>
-                    <h4>Modo de Preparo:</h4>
+                </div>
+                <div class="card">
+                    <h2>MODO DE PREPARO:</h2>
+                    
                     <ol>
-                        <li></li>
-                        <li></li>
-                        <li></li>
 
+                        <li>primeiramente leve ao fogo uma panela com o leite, a manteiga e o tablete de caldo.</li>
+                        <li>Quando começar a ferver, baixe o fogo e coloque o sal e a farinha de trigo de só uma vez. Mexa imediatamente com uma colher de pau, misturando e amassando bem até que a massa de coxinha comece a desgrudar do fundo da panela, como na foto.</li>
+                        <li>Transfira a massa de coxinha para a bancada limpa e polvilhada com farinha e reserve até amornar. Depois amasse e sove a massa de coxinha simples com as suas mãos até que fique lisa e homogênea. A receita de massa de coxinha está pronta! Vamos preparar o recheio de frango e requeijão.</li>
+                        <li>Leve ao fogo baixo uma panela com o azeite, a cebola picada e os tomates. Tempere com sal e pimenta a gosto e deixe cozinhar, mexendo de vez em quando, por 5 minutos ou até estes ingredientes ficarem macios.</li>
+                        <li>Depois acrescente o frango cozido e desfiado e o cheiro verde. Misture e deixe cozinhar por mais 1-2 minutos, para o frango pegar o gosto desses temperos. Desligue o fogo e deixe esfriar um pouco antes de misturar o requeijão cremoso neste recheio para coxinha.</li>
+                        Dica: para deixar o recheio de frango mais vermelhinho, acrescente 1 colher de chá de colorau e misture muito bem.
+                        <li>Pegue um pedaço da massa de coxinha e abra em forma de disco na sua mão. Coloque uma porção do recheio de frango e feche a massa modelando no formato da coxinha tradicional. Repita com a restante massa e recheio.</li>
+                        Dica: o disco de massa de coxinha deverá ser mais ou menos do mesmo tamanho que a palma da sua mão.
+                        <li>Envolva as coxinhas no leite e, em seguida, passe na farinha de rosca. Esquente o óleo numa panela no fogo médio e, quando estiver quente, coloque 3-4 coxinhas fritando até que estejam douradas de todos os lados.</li>
+                        <li>Retire as coxinhas fritas para um prato com papel absorvente e reserve. Continue fritando as coxinhas restantes, apenas 3-4 de cada vez, para evitar que grudem umas nas outras e para não ficarem gordurosas.</li>
+                        <li>Depois de fritar todas as coxinhas, pode se deliciar com este maravilhoso quitute brasileiro! Não hesite em preparar esta receita de coxinha fácil e deliciosa e dizer nos comentários o que você achou. Bom apetite!</li>
                     </ol>
-                    <br>
+                </div>
 
+            </div>
+            <h2> Bolo salgado de Frango</h2>
+            <img src="https://receitoca.com.br/wp-content/uploads/2020/04/Bolo-salgado-de-frango.jpg">
+            <p>O bolo salgado de frango é uma opção de receita super cremosa, já que ela é feita com maionese, mostarda e creme de leite. O mais legal de preparar esse bolo salgado, é que você pode investir em colocar alguns pedacinho de legume de sua preferência. Como para essa receita você vai precisar colocar pão de forma, ela vai ficar com uma consistência mais fofinha, e muito semelhante a um bolo, seguindo a proposta base desse prato. Fica pronto em até 25 minutos, e rende 8 porções.</p>
+            <div class="card">
+                <h2>INGREDIENTES:</h2>
+                <ul>
 
+                    <li> 400 g de Maionese</li>
+                    <li> 1 caixinha de creme de leite</li>
+                    <li> 1 colher chá de Alho</li>
+                    <li>1/2 colher sopa de Mostarda</li>
+                    <li>1 colher sopa de Alecrim Picado</li>
+                    <li>1/2 colher sopa de Páprica Doce</li>
+                    <li> 1/2 colher chá de Sal</li>
+                    <li>300 g de Frango Cozido Desfiado</li>
+                    <li> 1/2 xícara chá de Milho </li>
+                    <li> 3 Cenouras Raladas</li>
+                    <li>1/2 xícara chá de Azeitonas</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>MODO DE PREPARO:</h2>
+                
+                <ol>
 
+                    <li>Coloque a Maionese, Creme de Leite, Alho, Paprica, Sal, Mostarda e Alecrim e misture muito bem!</li>
+                    <li>Em outra tigela adicione 300g de Frango cozido e desfiado, 1/2 xícara (chá) de Milho e adicione a maionese temperada aos poucos até ficar cremoso e reserve.</li>
+                    <li>Em outra misture tigela 3 cenouras raladas, 1/2 xícara (chá) de azeitonas picadas e a maionese aos poucos até ficar cremoso reserve.</li>
+                    <li>Retire as cascas de 16 fatias de pães de forma coloque uma camada e cubra com o patê de frango, cubra com outra camada de pão e adicione a cenoura e repita o processo até terminar com uma camada de pão.</li>
+                    <li>Use o restante da maionese temperada para cobrir toda a superfície, decore como quiser e esta pronto!</li>
+                    
+                    <h2>Informações adicionais</h2>
+                    <h5>PÃO: Se quiser use o pão sem casca comprido que já existe nos mercados. <br> 
+                        FRANGO: Pode trocar por atum ou sardinha se preferir.<br> 
+                        CENOURA: Aqui deixe ela ralada para dar textura, mas pode bater com a<br> maionese se quiser fazer um patê mesmo. Se desejar pode usar também Beterrabas <br> 
+                        MAIONESE: Você pode bater no liquidificador se quiser um sabor mais marcante! <br> 
+                        ALECRIM: Você pode trocar por qualquer erva que gostar, inclusive salsinha e cebolinha! <br> 
+                        CONSERVAÇÃO: Mantenha em geladeira e consuma em até 3 dias.</h5>
+                   
+                </ol>
+            </div>
 
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2024 Delícias na Cozinha. Made by Hábia, Karina e Sara</p>
-        </footer>
-        
-
-        <script src="./scripts.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
+            <!-- Adicione suas receitas salgadas aqui -->
+        </section>
+    </main>
+   
+    <footer>
+        <p>&copy; 2024 Delícias na Cozinha - Todos os direitos reservados</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./script.js">
+</body>
 </html>

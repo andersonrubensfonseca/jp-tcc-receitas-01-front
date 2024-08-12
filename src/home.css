@@ -1,0 +1,205 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    background: #f04907b7;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+    color: #7e3011ce;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color:  black;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: #fdd663;
+    color: #fff;
+}
+
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.menu-item {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.menu-item:hover {
+    background-color: #fdd663;
+    color: #fff;
+    
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background-color: #fdd663;
+    color: black;
+}
+
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.button {
+    display:inline-block;
+    padding: 10px 20px;
+    background-color: #f04907b7;;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.button:hover {
+    background-color:black;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05); 
+}
+.button:active {
+    background-color: #fff;
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+footer {
+    background: #f04907b7;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.card {
+    background-color: #e095729a;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-color: #f0490fb7;
+}
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+.card ul li {
+    margin-bottom: 10px;
+}
+
+.recipe {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',;
+    width: 100%;
+}
+
+.recipe img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+ul, ol {
+    font-family:cursive;
+    list-style-position: inside; /* Marcadores alinhados com o texto */
+    padding-left: 20px; /* Espaçamento à esquerda das listas */
+    margin: 0; /* Remove a margem padrão */
+  }
+  ul li, ol li {
+    margin-bottom: 10px; /* Espaçamento inferior entre os itens */
+    padding: 5px 0; /* Espaçamento interno opcional (topo e base) */
+}
+
+@media (max-width: 768px){
+    .menu {
+    flex-direction: column;
+}}
+.recipes-container {
+    flex-direction: column;
+}
+.button, .login-button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button:hover, .login-button:hover {
+    background-color:#e4cf10;
+    transform: scale(1.05);
+}
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+    
+}

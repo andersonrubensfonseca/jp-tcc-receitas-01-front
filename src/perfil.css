@@ -1,0 +1,125 @@
+
+/* Estilos gerais para a página de perfil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+header {
+    background: #e9882e;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+.profile-header {
+    background: #e9882e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile-info h2 {
+    font-size: xx-large;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.profile-info p {
+    font-size: large;
+    color: #fff;
+    margin: 0 0 20px;
+}
+
+.user-recipes {
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.user-recipes h3 {
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recipe-card h4 {
+    font-size: large;
+    margin: 10px 0;
+}
+
+.recipe-card p {
+    font-size: medium;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.recipe-card .button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.recipe-card .button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background: #e9710f;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
