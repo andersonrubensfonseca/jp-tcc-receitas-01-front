@@ -1,67 +1,175 @@
-
-body, html{
-    height: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+* {
+    padding: 0;
     margin: 0;
-    font-size: arial, sans-serif;
-    height:100vh;
-    width:100%;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #fdc763;
 }
 
-.bg-image{
-    background-image: url('https://assets.afcdn.com/recipe/20230126/139858_w1024h768c1cx1060cy707cxt0cyt0cxb2121cyb1414.jpg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-        
-}
-
-.login-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    backdrop-filter: blur(0px);
-    max-width: 400px;
-    margin: auto;
-    padding: 2rem;
-    background-color: #f04907b7;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-   
-    
-}
-    
-.login-form{
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px #f04907b7;
-    
-   
-   
-    
-}
-.remember-forgot a {
-    color: #007bff;
-}
-.remember-forgot a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 575.98px){
-    .bg-image{
-        background-size: cover;
-    }
-}
 .container {
     width: 80%;
     height: 80vh;
     display: flex;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(241, 180, 139, 0.808);
+}
+
+.form-image {
+    width: 680px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+}
+
+.form-image img {
+    width: 40rem;
+    border-radius: 5px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f04907b7;
+    padding: 2rem;
+}
+
+.form-header {
+    margin-bottom: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-button {
+    display: flex;
+    align-items: center;
+}
+
+.register-button button {
+    border: none;
+    background-color: #e095729a;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #7e3011ce;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #7e3011ce;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px rgba(241, 180, 139, 0.808);
+}
+
+.input-box input:hover {
+    background-color: #e095729a;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #f04907b7;
+}
+
+.input-box label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.input-box input::placeholder {
+    color: #7e3011ce;
+}
+
+.continue-button button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #7e3011ce;
+    padding: 0.62rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: #7e3011ce;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+    .input-group {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
 }
