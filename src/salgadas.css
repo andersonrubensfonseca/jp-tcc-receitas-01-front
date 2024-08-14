@@ -29,7 +29,7 @@ nav {
 }
 
 nav a {
-    color:  black;
+    color:  #fff;
     text-decoration: none;
     margin: 0 15px;
     padding: 5px 10px;
@@ -144,13 +144,15 @@ footer {
     background-color: #e095729a;
     color: black;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid #fff;
     padding: 10px;
     margin: 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     border-color: #f0490fb7;
+   
+
 }
 .card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -166,12 +168,16 @@ footer {
 }
 
 .recipe img {
-    width: 100%;
+    width: 80%;
     height: auto;
     max-width: 600px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    margin: 0 auto;
 }
 ul, ol {
     font-family:cursive;
@@ -223,4 +229,14 @@ p{
 
 #rating-message {
     font-weight: bold;
+}
+
+
+#salgadas {
+    text-align: center; 
+}
+
+
+.recipe img {
+    margin-bottom: 1rem;
 }

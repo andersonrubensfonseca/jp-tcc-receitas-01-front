@@ -171,7 +171,7 @@ footer {
     max-width: 600px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
+
 }
 ul, ol {
     font-family:cursive;
@@ -202,25 +202,4 @@ p{
     font-family:Arial, Helvetica, sans-serif;
     font-size: larger;
     
-}
-.stars {
-    font-size: 2em;
-    cursor: pointer;
-}
-
-.stars span {
-    color: #ddd;
-}
-
-.stars span:hover,
-.stars span:hover ~ span {
-    color: gold;
-}
-
-.stars span.selected {
-    color: gold;
-}
-
-#rating-message {
-    font-weight: bold;
 }
