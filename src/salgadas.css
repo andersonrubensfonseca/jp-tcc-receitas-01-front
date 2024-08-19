@@ -1,25 +1,43 @@
-body, html {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
+/* Centralizar imagens */
+
+.img-center {
+    display: block;
+    margin: 0 auto; /* Isso centraliza o elemento com display: block */
+    width: 70%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 
+/* Estilo do corpo */
+
+body, html {
+    margin: 0 5px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+/* Estilo do Cabeçalho*/
 header {
     background: #f04907b7;
     color: #fff;
-    padding: 10px 0;
+    padding: 10px;
     text-align: center;
+    margin: 1px 10px;
 }
 
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
-    text-align: center;
     text-transform: uppercase;
     margin: 0;
 }
-
+h2{
+    text-align: center;
+}
+/* Estilo das abas de Nvegação*/
 nav {
     text-align: center;
     color: #7e3011ce;
@@ -29,28 +47,19 @@ nav {
 }
 
 nav a {
-    color:  #fff;
+    color: #fff;
     text-decoration: none;
     margin: 0 15px;
     padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
     background-color: #fdd663;
     color: #fff;
+    text-decoration: underline;
 }
-
-
-
-.menu {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-
-
+/* Estilo do Menu*/
 .menu-item {
     position: relative;
     display: inline-block;
@@ -58,14 +67,11 @@ nav a:hover {
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: 0px;
-    margin-bottom: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .menu-item:hover {
     background-color: #fdd663;
-    color: #fff;
-    
 }
 
 .dropdown {
@@ -75,7 +81,6 @@ nav a:hover {
     left: 0;
     list-style-type: none;
     padding: 0;
-    margin: 0;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -87,6 +92,7 @@ nav a:hover {
     padding: 10px 20px;
     color: #333;
     text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dropdown a:hover {
@@ -103,10 +109,11 @@ main {
     text-align: center;
 }
 
-.button {
-    display:inline-block;
+/* Estilos dos Botões*/
+.button, .login-button {
+    display: inline-block;
     padding: 10px 20px;
-    background-color: #f04907b7;;
+    background-color: #f04907b7;
     color: black;
     text-decoration: none;
     border-radius: 8px;
@@ -114,129 +121,156 @@ main {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     border: 2px solid transparent;
 }
 
-.button:hover {
-    background-color:black;
+.button:hover, .login-button:hover {
+    background-color: #e4cf10;
     color: black;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
 }
-.button:active {
+
+.button:active, .login-button:active {
     background-color: #fff;
+    color: black;
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+/* Estilo do rodapé*/
 footer {
     background: #f04907b7;
-    color: black;
+    color: #fff;
+    padding: 10px;
     text-align: center;
-    padding: 10px 0;
+    margin: 1px 10px;
     position: relative;
     width: 100%;
     bottom: 0;
+    
 }
+/* Contêiner dos ícones de mídias sociais */
+.social-media {
+    display: flex; /* Alinha os ícones em linha */
+    justify-content: center; /* Alinha os ícones horizontalmente ao centro */
+    gap: 15px; /* Espaço entre os ícones */
+    margin: 20px 0; /* Margem acima e abaixo do contêiner */
+  }
+  
+  /* Estilo para os links dos ícones */
+  .social-media a {
+    color:#e4cf10; /* Cor padrão dos ícones */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 24px; /* Tamanho dos ícones */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transições suaves para cor e transformações */
+  }
+  
+  /* Estilo para os ícones ao passar o mouse */
+  .social-media a:hover {
+    color: #007bff; /* Cor dos ícones ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho dos ícones ao passar o mouse */
+  }
+
+  
+  /* Estilo para a seção de informações de contato */
+
+.contact-info {
+    max-width: 600px; /* Define a largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f4f4f4; /* Cor de fundo da seção */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor do contêiner */
+    text-align: center; /* Alinha o texto ao centro */
+  }
+  
+  /* Estilo para o parágrafo */
+  .contact-info p {
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+  }
+  
+  /* Estilo para o link de e-mail */
+  .contact-info a {
+    color: #f04907b7; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Deixa o texto em negrito */
+  }
+  
+  /* Estilo do link ao passar o mouse */
+  .contact-info a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  }
 
 
+/* estilo dos Cards*/
 .card {
     background-color: #e095729a;
     color: black;
     text-align: center;
-    border-radius: 5px;
-    border: 1px solid #fff;
+    border-radius: 10px;
+    border: 1px solid #f0490fb7;
     padding: 10px;
-    margin: 10px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    border-color: #f0490fb7;
-   
-
-}
-.card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
-}
-.card ul li {
-    margin-bottom: 10px;
-}
-
-.recipe {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',;
-    width: 100%;
-}
-
-.recipe img {
-    width: 80%;
-    height: auto;
-    max-width: 600px;
-    border-radius: 8px;
+    margin:  20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-    display: block;
-    margin: auto;
-    margin-bottom: 1rem;
-    margin: 0 auto;
 }
-ul, ol {
-    font-family:cursive;
-    list-style-position: inside; /* Marcadores alinhados com o texto */
-    padding-left: 20px; /* Espaçamento à esquerda das listas */
-    margin: 0; /* Remove a margem padrão */
-  }
-  ul li, ol li {
-    margin-bottom: 10px; /* Espaçamento inferior entre os itens */
-    padding: 5px 0; /* Espaçamento interno opcional (topo e base) */
+/* Estilo da avaliação e Estrelas*/
+.rating {
+    margin-top: 20px;
 }
 
-@media (max-width: 768px){
-    .menu {
-    flex-direction: column;
-}}
-.recipes-container {
-    flex-direction: column;
-}
-.button, .login-button {
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-.button:hover, .login-button:hover {
-    background-color:#e4cf10;
-    transform: scale(1.05);
-}
-p{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: larger;
-    
-}
 .stars {
-    font-size: 2em;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
 
 .stars span {
-    color: #ddd;
+    font-size: 24px;
+    cursor: pointer;
 }
 
-.stars span:hover,
-.stars span:hover ~ span {
+.stars span:hover {
     color: gold;
 }
-
-.stars span.selected {
-    color: gold;
+/* CSS para a barra de pesquisa */
+#search-form {
+    display: flex;
+    align-items: center;
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 1rem auto; /* Centraliza o formulário horizontalmente */
+    padding: 0.5rem;
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5); /* Sombra leve amarela */
+    background-color: #fff; /* Cor de fundo do formulário */
 }
 
-#rating-message {
-    font-weight: bold;
+#search-input {
+    flex: 1; /* Faz o campo de entrada ocupar o máximo de espaço disponível */
+    padding: 0.5rem 1rem; /* Espaçamento interno do campo de entrada */
+    border: 1px solid #f4c542; /* Borda amarela clara ao redor do campo de entrada */
+    border-radius: 5px 0 0 5px; /* Bordas arredondadas apenas no lado esquerdo */
+    font-size: 1rem; /* Tamanho da fonte */
+    outline: none; /* Remove a borda de foco padrão */
+    transition: border-color 0.3s ease; /* Transição suave para a cor da borda */
 }
 
-
-#salgadas {
-    text-align: center; 
+#search-input:focus {
+    border-color: #f7b82d; /* Cor da borda amarela ao focar no campo de entrada */
 }
 
+button {
+    padding: 0.5rem 1rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 0 5px 5px 0; /* Bordas arredondadas apenas no lado direito */
+    background-color: #f7b82d; /* Cor de fundo amarela do botão */
+    color: #fff; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor indicando que é clicável */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
 
-.recipe img {
-    margin-bottom: 1rem;
+button:hover {
+    background-color: #f4c542; /* Cor de fundo amarela clara ao passar o mouse sobre o botão */
 }

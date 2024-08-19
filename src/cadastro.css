@@ -1,3 +1,4 @@
+
 @import url('://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
 * {
     padding: 0;
@@ -173,4 +174,43 @@ body {
     .gender-input {
         margin-top: 0.5rem;
     }
+}
+/* Estilo do contêiner do botão */
+.login-button {
+    display: flex;
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    margin-top: 2rem; /* Espaçamento acima do botão */
+}
+
+/* Estilo do botão */
+.login-button button {
+    border: none; /* Remove a borda padrão do botão */
+    background-color:  #e095729a; /* Cor de fundo do botão */
+    color: #0056b3; /* Cor do texto */
+    padding: 0.8rem 1.5rem; /* Espaçamento interno (padding) */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: bold; /* Fonte em negrito */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+}
+
+/* Estilo do link dentro do botão */
+.login-button button a {
+    color: #7e3011ce; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: 500;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.login-button button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho do botão ligeiramente */
+}
+
+/* Efeito ao clicar no botão */
+.login-button button:active {
+    background-color: #004080; /* Cor de fundo do botão ao clicar */
+    transform: scale(1); /* Retorna ao tamanho original */
 }

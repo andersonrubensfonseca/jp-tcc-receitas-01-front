@@ -1,118 +1,418 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas De Bebidas - Delícias na Cozinha</title>
+   
     <link rel="stylesheet" href="./bebidas.css">
-    
-    <title>Lista de Bebidas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
 <body>
-    <br>
-    <div class="container">
-        <h1>Lista de Bebidas</h1>
-        <ul class="beverages-list">
-            <div class="beverage-item">
-                <h2>Vitamina de Abacate e Hortelã</h2>
-                <img src="https://www.guiadasemana.com.br/contentFiles/image/opt_w720h445/2018/10/FEA/50961_shutterstock-670795450.jpg" alt="Vitamina de Abacate e Hortelã" width="600" height="400">
-                <p>As vitaminas, além de deliciosas, são uma ótima maneira de começar o dia com disposição. E a grande vantagem dessas bebidas é que são extremamente práticas, além de aceitarem infinitas combinações.</p>
-                <h2>INGREDIENTES:</h2>
-                <ol>
-                    <li>1 abacate;</li>
-                    <li>5 folhas frescas de hortelã;</li>
-                    <li>1 copo de leite;</li>
-                    <li>2 colheres de açúcar.</li>
-                </ol>
+    <header>
+        <img src="imagens/logo2.png" alt="Delícias na Cozinha" width=350 height=350>
+        <nav>
+            <a href="home.html">Início</a>
+            <div class="menu-item">
+                Receitas
+                <div class="dropdown">
+                    <a href="receitasdoces.html">Receitas Doces</a>
+                    <a href="./receitassalgadas.html">Receitas Salgadas</a>
+                    <a href="./carnes.html">Receitas com Carnes</a>
+                    <a href="./bebidas.html">Receitas de Bebidas</a>
+                </div>
+            </div>
+        <a href="sobre.html">Sobre</a>
+        <a href="login.html">Login</a>
+        <form id="search-form" action="https://www.###.com/search" method="get">
+            <input type="text" id="search-input" name="q" placeholder="Buscar..." required>
+            <button type="submit">Buscar</button>
+        </form>
+    </nav>
+</header>
+    <div style="text-align: center;">
+        <br>
+    <h2>Explosão de Sabores: Nossas Melhores Receitas de Bebidas:</h2>
+    <p>As bebidas estão presentes nas refeições do dia a dia e nas ocasiões mais especiais. Seja um café passado pela manhã, um suco na hora do almoço,<br> uma vitamina no lanche da tarde ou um drink para uma festa, aqui você encontra as melhores receitas de bebidas com e sem álcool.</p>
 
-                <h2>MODO DE PREPARO:</h2> 
-                <ul>
-                    <li>Bata todos os ingredientes no liquidificador e sirva gelado.</li>
-                </ul>           
-            </li>
-            <br>
-            <li class="beverage-item">
-                <h2>Vitamina de Morango e Aveia</h2>
-                <img src="https://www.guiadasemana.com.br/contentFiles/image/opt_w720h445/2018/10/FEA/50961_shutterstock-276541955.jpg" alt="Vitamina de Morango e Aveia" width="600" height="400">
-                <p>Para quem busca energia para começar o dia, seja para ir à academia ou para ter pique para o trabalho, as vitaminas são ótimas opções, desde que você use os ingredientes certos.</p>
-                <h2>INGREDIENTES:</h2>
-                <ol>
-                    <li>5 morangos;</li>
-                    <li>1 copo de leite;</li>
-                    <li>2 colheres de açúcar;</li>
-                    <li>1 colher de sopa de aveia em pó.</li>
-                </ol>
-                <h2>MODO DE PREPARO:</h2> 
-                <ul>
-                    <li>Bata todos os ingredientes no liquidificador e sirva gelado.</li>
-                </ul>     
-            </li>
-            <br>
-            <li class="beverage-item">
+
+    <main>
+        <section id="bebidas.html">
+            <div class="recipes-container">
+                <div class="recipe">
+                <div style="text-align: center;">
+                    <h2>Vitamina de Abacate e Hortelã</h2>
+                    <img src="https://www.guiadasemana.com.br/contentFiles/image/opt_w720h445/2018/10/FEA/50961_shutterstock-670795450.jpg" alt="Vitamina de Abacate e Hortelã" width="600" height="400">
+                    <p>As vitaminas, além de deliciosas, são uma ótima maneira de começar o dia com disposição. E a grande vantagem dessas bebidas é que são extremamente práticas, além de aceitarem infinitas combinações.</p>
+                    <div class="card">
+                        <h2>INGREDIENTES:</h2>
+                            <ul>
+                                <li>1 abacate;</li>
+                                <li>5 folhas frescas de hortelã;</li>
+                                <li>1 copo de leite;</li>
+                                <li>2 colheres de açúcar.</li>
+                            </ul>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <h2>MODO DE PREPARO:</h2>
+                            <ol>
+                                <li>Bata todos os ingredientes no liquidificador e sirva gelado.</li>
+                            </ol>
+                    </div>
+                    <br>
+                    <div class="rating">
+                        <h2>Avalie esta receita:</h2>
+                        <div class="stars">
+                            <span data-value="1">&#9733;</span>
+                            <span data-value="2">&#9733;</span>
+                            <span data-value="3">&#9733;</span>
+                            <span data-value="4">&#9733;</span>
+                            <span data-value="5">&#9733;</span>
+                        </div>
+                        <p id="rating-message"></p>
+                    </div>
+                    <br>
+                    <div style="text-align: center;">
+                    <h2>Vitamina de Morango e Aveia</h2>
+                    <img src="https://www.guiadasemana.com.br/contentFiles/image/opt_w720h445/2018/10/FEA/50961_shutterstock-276541955.jpg" alt="Vitamina de Morango e Aveia" width="600" height="400">
+                   <p>Para quem busca energia para começar o dia, seja para ir à academia ou para ter pique para o trabalho, as vitaminas são ótimas opções, desde que você use os ingredientes certos.</p>
+                    <div class="card">
+                        <h2>INGREDIENTES:</h2>
+                            <ul>
+                                <li>5 morangos;</li>
+                                <li>1 copo de leite;</li>
+                                <li>2 colheres de açúcar;</li>
+                                <li>1 colher de sopa de aveia em pó.</li>
+                             </ul>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <h2>MODO DE PREPARO:</h2>
+                            <ol>
+                                <li>Bata todos os ingredientes no liquidificador e sirva gelado.</li>
+                            </ol>
+                    </div>
+                    <br>
+                    <div class="rating">
+                        <h2>Avalie esta receita:</h2>
+                        <div class="stars">
+                            <span data-value="1">&#9733;</span>
+                            <span data-value="2">&#9733;</span>
+                            <span data-value="3">&#9733;</span>
+                            <span data-value="4">&#9733;</span>
+                            <span data-value="5">&#9733;</span>
+                        </div>
+                        <p id="rating-message"></p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+                <div style="text-align: center;">
                 <h2>Drink de Laranja</h2>
-                <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/02/10/istock-538644352-uve483uoovu9.jpg" alt="Drink de Laranja" width="600" height="400">
-                <p>Você tem convidados e gostaria de surpreendê-los com uma deliciosa bebida? Prepare essa receita refrescante de laranja.</p>
-                <h2>INGREDIENTES:</h2>
-                <ol>
-                    <li>50 ml de vodka;</li>
-                    <li>Suco de laranja fresco (o suficiente para completar);</li>
-                    <li>Gelo a gosto;</li>
-                    <li>1/2 rodela de laranja para enfeitar;</li>                       
-                    <li>1 pedaço de casca de laranja para finalizar.</li>
-                </ol>
-                <h2>MODO DE PREPARO:</h2> 
-                <ul>
-                    <li>Em um copo longo (gelado), coloque cubos de gelo, a vodka e complete com o suco de laranja;</li>
-                    <li>Misture delicadamente e decore com a meia fatia de laranja;</li>
-                    <li>Finalize espremendo a casca de laranja por cima da bebida e sirva.</li>
-                </ul>    
-            </li>
-            <br>
-            <li class="beverage-item">
-                <h2>Caipirinha de Limão</h2>
-                <img src="https://www.xreceitas.com.br/wp-content/uploads/2023/12/receita-de-caipirinha-de-limao.webp" alt="Caipirinha de Limão" width="600" height="400">
+                        <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/02/10/istock-538644352-uve483uoovu9.jpg" alt="Drink de Laranja"  width="600" height="400">
+                    <p>Você tem convidados e gostaria de surpreendê-los com uma deliciosa bebida? Prepare essa receita refrescante de laranja.</p>
+                        <div class="card">
+                            <h2>INGREDIENTES:</h2>
+                            <ul>
+                                <li>50 ml de vodka;</li>
+                                <li>Suco de laranja fresco (o suficiente para completar);</li>
+                                <li>Gelo a gosto;</li>
+                                <li>1/2 rodela de laranja para enfeitar;</li>                       
+                                <li>1 pedaço de casca de laranja para finalizar.</li>
+                                
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="card">
+                        <h2>MODO DE PREPARO:</h2>
+                        <ol>
+                            <li>Em um copo longo (gelado), coloque cubos de gelo, a vodka e complete com o suco de laranja;</li>
+                            <li>Misture delicadamente e decore com a meia fatia de laranja;</li>
+                            <li>Finalize espremendo a casca de laranja por cima da bebida e sirva.</li>
+                        </ol>
+                    </div>
+                    <br>
+                    <div class="rating">
+                        <h2>Avalie esta receita:</h2>
+                        <div class="stars">
+                            <span data-value="1">&#9733;</span>
+                            <span data-value="2">&#9733;</span>
+                            <span data-value="3">&#9733;</span>
+                            <span data-value="4">&#9733;</span>
+                            <span data-value="5">&#9733;</span>
+                        </div>
+                        <p id="rating-message"></p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+                    <div style="text-align: center;">
+                    <h2>Caipirinha de Limão</h2>
+                    <img src="https://www.xreceitas.com.br/wp-content/uploads/2023/12/receita-de-caipirinha-de-limao.webp" alt="Caipirinha de Limão"  width="600" height="400">
                 <p>Descubra agora o segredo da caipirinha original, uma receita clássica que vai transportar você para um sabor autêntico do Brasil! Com apenas três ingredientes e alguns passos simples, você poderá preparar essa deliciosa bebida refrescante em minutos. O equilíbrio perfeito entre limão, açúcar e cachaça irá surpreender seu paladar.</p>
-                <h2>INGREDIENTES:</h2>
-                <ol>
-                    <li>1 limão grande;</li>
-                    <li>2 colheres de açúcar;</li>
-                    <li>Cachaça;</li>
-                    <li>Gelo a gosto.</li>
-                </ol>
-                <h2>MODO DE PREPARO:</h2> 
-                <ul>
-                    <li>Pegue o limão coloque-o na horizontal e retire as duas pontas, vire-o na vertical e corte-o ao meio, retire os meio (parte branca) do limão e fatie;</li>
-                    <li>Coloque o limão fatiado e duas colheres bem cheias de açúcar dentro de um copo próprio para a bebida e com um socador esprema até que saia todo o suco do limão;</li>
-                    <li>Coloque pedras de gelo até quase encher o copo (aproximadamente 12 pedras pequenas de gelo) e encha o copo com a cachaça;</li>
-                    <li>Mexa bem com uma colher ou coloque em uma coqueteleira e sirva-se!</li>
-                </ul>  
-            </li>
+                    <div class="card">
+                        <h2>INGREDIENTES:</h2>
+                        <ul>
+                            <li>1 limão grande;</li>
+                            <li>2 colheres de açúcar;</li>
+                            <li>Cachaça;</li>
+                            <li>Gelo a gosto.</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <h2>MODO DE PREPARO:</h2>
+                        <ol>
+                            <li>Pegue o limão coloque-o na horizontal e retire as duas pontas, vire-o na vertical e corte-o ao meio, retire os meio (parte branca) do limão e fatie;</li>
+                            <li>Coloque o limão fatiado e duas colheres bem cheias de açúcar dentro de um copo próprio para a bebida e com um socador esprema até que saia todo o suco do limão;</li>
+                            <li>Coloque pedras de gelo até quase encher o copo (aproximadamente 12 pedras pequenas de gelo) e encha o copo com a cachaça;</li>
+                            <li>Mexa bem com uma colher ou coloque em uma coqueteleira e sirva-se!</li>
+                        </ol>
+                    </div>
+                    <br>
+                    <div class="rating">
+                        <h2>Avalie esta receita:</h2>
+                        <div class="stars">
+                            <span data-value="1">&#9733;</span>
+                            <span data-value="2">&#9733;</span>
+                            <span data-value="3">&#9733;</span>
+                            <span data-value="4">&#9733;</span>
+                            <span data-value="5">&#9733;</span>
+                        </div>
+                        <p id="rating-message"></p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <div style="text-align: center;">
+             <h2>Cappuccino Caseiro</h2>
+                        <img src="https://blog.cybercook.com.br/wp-content/uploads/2022/07/capuccino-caseiro-suavizando-e-saborizando-o-seu-cafe.jpg" alt="Cappuccino Caseiro"  width="600" height="400">
+                    <p>O cappuccino é quente e reconfortante, com poucos ingredientes e um modo de preparo muito simples, ele vai te surpreender!</p>
+                        <div class="card">
+                            <h2>INGREDIENTES:</h2>
+                            <ul>
+                                <li>50g de café solúvel;</li>
+                                <li>250g de leite em pó;</li>
+                                <li>3 colheres de sopa de chocolate em pó;</li>
+                                <li>1 colher de chá de bicarbonato de sódio (é o que dá a consistência cremosa);</li>
+                                <li>1 colher de chá de canela em pó;</li>
+                                <li>250g de açúcar ou adoçante a gosto.</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="card">
+                        <h2>MODO DE PREPARO:</h2>
+                        <ol>
+                            <li>Misture todos os ingredientes e guarde em um pote bem fechado;</li>
+                            <li>Para preparar a bebida, use duas colheres de sobremesa por xícara;</li>
+                            <li>Para um cappuccino mais cremoso, prepare-o com leite, ao invés de apenas água.</li>
+                        </ol>
+                    </div>
+                    <br>
+                    <div class="rating">
+                        <h2>Avalie esta receita:</h2>
+                        <div class="stars">
+                            <span data-value="1">&#9733;</span>
+                            <span data-value="2">&#9733;</span>
+                            <span data-value="3">&#9733;</span>
+                            <span data-value="4">&#9733;</span>
+                            <span data-value="5">&#9733;</span>
+                        </div>
+                        <br>
+                        <div style="text-align: center;">
+                            <h2>Café Cremoso</h2>
+                                       <img src="https://storage.googleapis.com/imagens_videos_gou_cooking_prod/production/cooking/HvofeMlwMOzmpuAbbEsvfWriiMFC5Z4u9f0jTpUZ.jpeg" alt="Café Cremoso"  width="600" height="400">
+                                   <p>Para os amantes de café, toda receita com essa delícia é bem-vinda. Na hora de servir, você ainda pode adicionar leite quente ou alguma bebida de sua preferência.</p>
+                                       <div class="card">
+                                           <h2>INGREDIENTES:</h2>
+                                           <ul>
+                                               <li>1 sachê 50g de café solúvel Nescafé Tradição;</li>
+                                               <li>2 xícaras de açúcar;</li>
+                                               <li>1 xícara de água fervente.</li>
+                                           </ul>
+                                       </div>
+                                       <br>
+                                       <div class="card">
+                                       <h2>MODO DE PREPARO:</h2>
+                                       <ol>
+                                           <li>Na batedeira, coloque o café e o açúcar;</li>
+                                           <li>Misture bem na tigela da batedeira;</li>
+                                           <li>Aos poucos, adicione a água quente;</li>
+                                           <li> Em seguida, bata a mistura por 10 a 15 minutos, até que ficar cremoso (ficará bem volumoso e liso);</li>
+                                           <li>Coloque em um pote com tampa e conserve no freezer ou na geladeira;</li>
+                                       </ol>
+                                   </div>
+                                   <br>
+                                   <div class="rating">
+                                       <h2>Avalie esta receita:</h2>
+                                       <div class="stars">
+                                           <span data-value="1">&#9733;</span>
+                                           <span data-value="2">&#9733;</span>
+                                           <span data-value="3">&#9733;</span>
+                                           <span data-value="4">&#9733;</span>
+                                           <span data-value="5">&#9733;</span>
+                                       </div>
+                                       <br>
+                        <div style="text-align: center;">
+                            <h2>Chocolate Quente com Nutella</h2>
+                                       <img src="https://cdn0.tudoreceitas.com/pt/posts/7/0/4/chocolate_quente_com_nutella_11407_orig.jpg" alt="Chocolate Quente com Nutella"  width="600" height="400">
+                                   <p>Perfeito para os dias mais frios!</p>
+                                       <div class="card">
+                                           <h2>INGREDIENTES:</h2>
+                                           <ul>
+                                               <li>50 ml de creme de leite;</li>
+                                               <li>2 colheres (sopa) de nutella;</li>
+                                               <li>70 gramas de chocolate em pó meio-amargo;</li>
+                                               <li>150 ml de leite integral.</li>
+                                           </ul>
+                                       </div>
+                                       <br>
+                                       <div class="card">
+                                       <h2>MODO DE PREPARO:</h2>
+                                       <ol>
+                                           <li>Aqueça o creme de leite, adicione o chocolate em pó até formar um creme homogêneo e reserve;</li>
+                                           <li>Ferva o leite, retire do fogo e acrescente o creme de chocolate;</li>
+                                           <li>Adicione a nutella e mexa bem!</li>
+                                       </ol>
+                                   </div>
+                                   <br>
+                                   <div class="rating">
+                                       <h2>Avalie esta receita:</h2>
+                                       <div class="stars">
+                                           <span data-value="1">&#9733;</span>
+                                           <span data-value="2">&#9733;</span>
+                                           <span data-value="3">&#9733;</span>
+                                           <span data-value="4">&#9733;</span>
+                                           <span data-value="5">&#9733;</span>
+                                       </div>
+                                       <br>
+                                       <div style="text-align: center;">
+                                        <h2>Suco Verde Detox</h2>
+                                                   <img src="https://www.minhavidamagnolia.com.br/wp-content/uploads/2021/05/receita-de-suco-detox.jpg" alt="Suco Verde Detox"  width="600" height="400">
+                                               <p>Perfeito para os dias mais frios!</p>
+                                                   <div class="card">
+                                                       <h2>INGREDIENTES:</h2>
+                                                       <ul>
+                                                           <li>1 folha de couve;</li>
+                                                           <li>Suco de 1/2 limão;</li>
+                                                           <li>1 pedaço pequeno de pepino japonês;</li>
+                                                           <li>1 maçã vermelha picada;</li>
+                                                           <li>3/4 de xícara (chá) de água de coco (150 ml).</li>
+                                                       </ul>
+                                                   </div>
+                                                   <br>
+                                                   <div class="card">
+                                                   <h2>MODO DE PREPARO:</h2>
+                                                   <ol>
+                                                       <li>Bata os ingredientes no liquidificador por aproximadamente 2 minutos. Consuma em seguida.</li>
+                                                   </ol>
+                                               </div>
+                                               <br>
+                                               <div class="rating">
+                                                   <h2>Avalie esta receita:</h2>
+                                                   <div class="stars">
+                                                       <span data-value="1">&#9733;</span>
+                                                       <span data-value="2">&#9733;</span>
+                                                       <span data-value="3">&#9733;</span>
+                                                       <span data-value="4">&#9733;</span>
+                                                       <span data-value="5">&#9733;</span>
+                                                   </div>
+                                                   <br>
+                                                   <div style="text-align: center;">
+                                                    <h2>Suco Detox Couve, Beterraba e Cenoura</h2>
+                                                               <img src="https://blog.novidadesaudavel.com.br/wp-content/uploads/2023/09/suco-detox-de-beterraba-e-cenoura-receita-para-limpeza-e-energia_384.png" alt="Suco Detox Couve, Beterraba e Cenoura"  width="600" height="400">
+                                                           <p>A bebida ideal para a sua saúde!</p>
+                                                               <div class="card">
+                                                                   <h2>INGREDIENTES:</h2>
+                                                                   <ul>
+                                                                       <li>1 folha de Couve manteiga crua;</li>
+                                                                       <li>1 unidade pequena de Cenoura crua;</li>
+                                                                       <li>1 unidade pequena de Beterraba crua;</li>
+                                                                       <li>2 fatias médias de Abacaxi;</li>
+                                                                       <li>6 folhas de Hortelã;</li>
+                                                                       <li>Gengibre à gosto.</li>
+                                                                   </ul>
+                                                               </div>
+                                                               <br>
+                                                               <div class="card">
+                                                               <h2>MODO DE PREPARO:</h2>
+                                                               <ol>
+                                                                   <li>Coloque tudo no liquidificador, com 200 ml de agua, bate, depois coa e siva bem gelado.</li>
+                                                               </ol>
+                                                           </div>
+                                                           <br>
+                                                           <div class="rating">
+                                                               <h2>Avalie esta receita:</h2>
+                                                               <div class="stars">
+                                                                   <span data-value="1">&#9733;</span>
+                                                                   <span data-value="2">&#9733;</span>
+                                                                   <span data-value="3">&#9733;</span>
+                                                                   <span data-value="4">&#9733;</span>
+                                                                   <span data-value="5">&#9733;</span>
+                                                               </div>
+                                                               <br>
+                                                   <div style="text-align: center;">
+                                                    <h2>Espanhola</h2>
+                                                               <img src="https://vila-vinifera.com/wp-content/uploads/2017/03/drink-espanhola.jpg" alt="Espanhola"  width="600" height="400">
+                                                           <p>Uma bebida deliciosa, você vai amar!</p>
+                                                               <div class="card">
+                                                                   <h2>INGREDIENTES:</h2>
+                                                                   <ul>
+                                                                       <li>1 lata de leite condensado;</li>
+                                                                       <li>1 abacaxi médio sem o miolo;</li>
+                                                                       <li>1 litro de vinho suave;</li>
+                                                                       <li>Gelo.</li>
+                                                                   </ul>
+                                                               </div>
+                                                               <br>
+                                                               <div class="card">
+                                                               <h2>MODO DE PREPARO:</h2>
+                                                               <ol>
+                                                                   <li>Bater tudo no liquidificador e levar a geladeira antes de servir!</li>
+                                                               </ol>
+                                                           </div>
+                                                           <br>
+                                                           <div class="rating">
+                                                               <h2>Avalie esta receita:</h2>
+                                                               <div class="stars">
+                                                                   <span data-value="1">&#9733;</span>
+                                                                   <span data-value="2">&#9733;</span>
+                                                                   <span data-value="3">&#9733;</span>
+                                                                   <span data-value="4">&#9733;</span>
+                                                                   <span data-value="5">&#9733;</span>
+                                                               </div>
+                        <p id="rating-message"></p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </section>
 
-            <li class="beverage-item">
-                <h2>Cappuccino Caseiro</h2>
-                <img src="https://blog.cybercook.com.br/wp-content/uploads/2022/07/capuccino-caseiro-suavizando-e-saborizando-o-seu-cafe.jpg" alt="Cappuccino Caseiro" width="600" height="400">
-                <p></p>
-                <h2>INGREDIENTES:</h2>
-                <ol>
-                    <li>50g de café solúvel;</li>
-                    <li>250g de leite em pó;</li>
-                    <li>3 colheres de sopa de chocolate em pó</li>
-                    <li>1 colher de chá de bicarbonato de sódio (é o que dá a consistência cremosa);</li>
-                    <li>1 colher de chá de canela em pó;</li>
-                    <li>250g de açúcar ou adoçante a gosto.</li>
-                </ol>
-                <h2>MODO DE PREPARO:</h2> 
-                <ul>
-                    <li>Misture todos os ingredientes e guarde em um pote bem fechado;</li>
-                    <li></li>
-                    <li>Coloque pedras de gelo até quase encher o copo (aproximadamente 12 pedras pequenas de gelo) e encha o copo com a cachaça;</li>
-                    <li>Mexa bem com uma colher ou coloque em uma coqueteleira e sirva-se!</li>
-                </ul>  
-                </li>
-            <li class="beverage-item">
-                <h2>Água com Gás</h2>
-                <img src="https://drogariasp.vteximg.com.br/arquivos/ids/527796-1000-1000/641626---agua-crystal-com-gas-500ml.jpg?v=637787360845500000" alt="Água com Gás">
-                <p>Água com gás: o toque efervescente que transforma o simples em especial e dá vida a cada gole.</p>
-            </li>
-        </ul>
+    </main>
+   
+    <footer>
+        <p>&copy; 2024 Delícias na Cozinha - Todos os direitos reservados</p>
+        <p>Siga-nos nas redes sociais:</p>
+        <div class="social-media">
+            <a href="##" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="##" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+        
+            </a>
+            <a href="##" target="_blank" aria-label="X">
+                <i class="fab fa-x"></i>
+            </a>
+        </div>
+        <div class="contact-info">
+        <p>Entre em contato: <a href="###.com">contato@deliciasnacozinha.com</a></p>
     </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

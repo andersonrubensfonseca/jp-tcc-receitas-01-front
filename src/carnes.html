@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delícias na Cozinha</title>
+    <title>Carnes - >Delícias na Cozinha</title>
    
     <link rel="stylesheet" href="./carnes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Delícias na Cozinha</h1>
+        <img src="imagens/logo2.png" alt="Delícias na Cozinha" width=350 height=350>
         <nav>
             <a href="home.html">Início</a>
             <div class="menu-item">
-            <a href="recipes.html">Receitas</a>    
+                        Receitas
                 <div class="dropdown">
-                    <a href="#.html">Receitas Doces</a>
-                    <a href="receitassalgadas.html">Receitas Salgadas</a>
-                    <a href="#.html">Carnes</a>
+                    <a href="./receitasdoces.html">Receitas Doces</a>
+                    <a href="./receitassalgadas.html">Receitas Salgadas</a>
+                    <a href="./carnes.html">Receitas com Carnes</a>
+                    <a href="./bebidas.html">Receitas de Bebidas</a>
                 </div>
             </div>
             <a href="sobre.html">Sobre</a>
             <a href="login.html">Login</a>
+            <form id="search-form" action="https://www.###.com/search" method="get">
+                <input type="text" id="search-input" name="q" placeholder="Buscar..." required>
+                <button type="submit">Buscar</button>
+            </form>
         </nav>
     </header>
 
@@ -64,6 +69,17 @@
                             <li>Coloque a água até que cubra a carne, mas não a ultrapasse.</li>
                             <li>Deixe na pressão por aproximadamente 25 minutos. Assim que começar a apitar desligue o fogo e sirva!</li>
                         </ol>
+                    </div>
+                    <div class="rating">
+                        <h2>Avalie esta receita:</h2>
+                        <div class="stars">
+                            <span data-value="1">&#9733;</span>
+                            <span data-value="2">&#9733;</span>
+                            <span data-value="3">&#9733;</span>
+                            <span data-value="4">&#9733;</span>
+                            <span data-value="5">&#9733;</span>
+                        </div>
+                        <p id="rating-message"></p>
                     </div>
                     <br>
                     <div style="text-align: center;">
@@ -115,6 +131,17 @@
                             <li>Tire do forno e sirva!</li>
                         </ol>
                     </div>
+                    <div class="rating">
+                        <h2>Avalie esta receita:</h2>
+                        <div class="stars">
+                            <span data-value="1">&#9733;</span>
+                            <span data-value="2">&#9733;</span>
+                            <span data-value="3">&#9733;</span>
+                            <span data-value="4">&#9733;</span>
+                            <span data-value="5">&#9733;</span>
+                        </div>
+                        <p id="rating-message"></p>
+                    </div>
                     <br>
                     <div style="text-align: center;">
                         <h2>Estrogonofe de Carne</h2>
@@ -155,12 +182,23 @@
                             <li>Por fim, acrescente o creme de leite e retire do fogo antes de ferver e está pronto para servir.</li>
                         </ol>
                     </div>
+                    <div class="rating">
+                        <h2>Avalie esta receita:</h2>
+                        <div class="stars">
+                            <span data-value="1">&#9733;</span>
+                            <span data-value="2">&#9733;</span>
+                            <span data-value="3">&#9733;</span>
+                            <span data-value="4">&#9733;</span>
+                            <span data-value="5">&#9733;</span>
+                        </div>
+                        <p id="rating-message"></p>
+                    </div>
                     <br>
                     <div style="text-align: center;">
                         <h2>Bife à Parmegiana</h2>
                         <img src="https://www.estadao.com.br/resizer/v2/WSWGR3VNIVEMZEDCZ3DPAQD3BQ.jpg?quality=80&auth=1e80a50a274f370b5a498c5c05e3c3922fcfcc23a8d31821b4ab182863e56060&width=720&height=503&smart=true" alt="Bife à Parmegiana" width="600 " height="400">
                     </div>
-                    <p>O bife à parmegiana é aquela receita ideal para comer quentinha, com o queijo derretendo na boca. Hum… Acompanhada com um delicioso arroz cozido e batata frita, esse bife a parmegiana é bem fácil de ser feito.</p>
+                    <p>O bife à parmegiana é aquela receita ideal para comer quentinha, com o queijo derretendo na boca. <br>Hum… Acompanhada com um delicioso arroz cozido e batata frita, esse bife a parmegiana é bem fácil de ser feito.</p>
                     <div class="card">
                     <br>
                         <h2>INGREDIENTES:</h2>
@@ -172,7 +210,7 @@
                             <li>115g de molho de tomate.</li>
                         </ul>
                     </div>
-                    <br>
+                        <br>
                     <div class="card">
                         <h2>MODO DE PREPARO:</h2>
                         <ol>
@@ -188,6 +226,17 @@
                             <li>Espere uns 10 minutos ou até gratinar;</li>
                             <li>Sirva com arroz e batata frita.</li>
                         </ol>
+                    </div>
+                    <div class="rating">
+                        <h2>Avalie esta receita:</h2>
+                        <div class="stars">
+                            <span data-value="1">&#9733;</span>
+                            <span data-value="2">&#9733;</span>
+                            <span data-value="3">&#9733;</span>
+                            <span data-value="4">&#9733;</span>
+                            <span data-value="5">&#9733;</span>
+                        </div>
+                        <p id="rating-message"></p>
                     </div>
                     <br>
                         <div style="text-align: center;">
@@ -219,15 +268,43 @@
                             <li>Polvilhe o coentro e sirva.</li>
                         </ol>
                     </div>
+                    <div class="rating">
+                        <h2>Avalie esta receita:</h2>
+                        <div class="stars">
+                            <span data-value="1">&#9733;</span>
+                            <span data-value="2">&#9733;</span>
+                            <span data-value="3">&#9733;</span>
+                            <span data-value="4">&#9733;</span>
+                            <span data-value="5">&#9733;</span>
+                        </div>
+                        <p id="rating-message"></p>
+                    </div>
+                    <br>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Delícias na Cozinha - Todos os Direitos Reservados</p>
+        <p>&copy; 2024 Delícias na Cozinha - Todos os direitos reservados</p>
+        <p>Siga-nos nas redes sociais:</p>
+        <div class="social-media">
+            <a href="##" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="##" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+        
+            </a>
+            <a href="##" target="_blank" aria-label="X">
+                <i class="fab fa-x"></i>
+            </a>
+        </div>
+        <div class="contact-info">
+        <p>Entre em contato: <a href="###.com">contato@deliciasnacozinha.com</a></p>
+    </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.minjs" integrity="=sha512-blT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLTtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDx1tZVFg==" crossorigin="=anonymous"></script>
-    <link rel="stylesheet" href="./script.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

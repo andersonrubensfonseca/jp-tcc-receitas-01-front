@@ -1,4 +1,9 @@
+/* Login CSS*/
+/* Imagem */
+/* Importar fonte */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+/* Reseta margens e preenchimentos, e define a fonte padrão */
 * {
     padding: 0;
     margin: 0;
@@ -6,6 +11,7 @@
     font-family: 'Inter', sans-serif;
 }
 
+/* Estilo geral do corpo */
 body {
     width: 100%;
     height: 100vh;
@@ -15,6 +21,7 @@ body {
     background: #fdc763;
 }
 
+/* Contêiner do formulário */
 .container {
     width: 80%;
     height: 80vh;
@@ -23,6 +30,7 @@ body {
     box-shadow: 5px 5px 10px rgba(241, 180, 139, 0.808);
 }
 
+/* Imagem do formulário */
 .form-image {
     width: 680px;
     flex: 1;
@@ -37,6 +45,7 @@ body {
     border-radius: 5px;
 }
 
+/* Formulário */
 .form {
     width: 100%;
     display: flex;
@@ -47,29 +56,12 @@ body {
     padding: 2rem;
 }
 
+/* Cabeçalho do formulário */
 .form-header {
     margin-bottom: 8rem;
     display: flex;
     justify-content: space-between;
-}
-
-.register-button {
-    display: flex;
-    align-items: center;
-}
-
-.register-button button {
-    border: none;
-    background-color: #e095729a;
-    padding: 0.4rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.register-button button a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #7e3011ce;
+    position: relative;
 }
 
 .form-header h1::after {
@@ -83,6 +75,7 @@ body {
     border-radius: 10px;
 }
 
+/* Grupo de inputs */
 .input-group {
     display: flex;
     flex-wrap: wrap;
@@ -92,6 +85,7 @@ body {
     margin-bottom: 1rem;
 }
 
+/* Caixa de input */
 .input-box {
     display: flex;
     flex-direction: column;
@@ -124,6 +118,7 @@ body {
     color: #7e3011ce;
 }
 
+/* Botão de continuar */
 .continue-button button {
     width: 100%;
     margin-top: 2.5rem;
@@ -145,6 +140,84 @@ body {
     color: #fff;
 }
 
+/* Botão de registro */
+.register-button {
+    display: flex;
+    align-items: center;
+}
+
+.register-button button {
+    border: none;
+    background-color: #e095729a;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+/* Estilo do link dentro do botão */
+.register-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #7e3011ce;
+}
+.register-button button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho do botão ligeiramente */
+}
+.-button button:active {
+    background-color: #004080; /* Cor de fundo do botão ao clicar */
+    transform: scale(1); /* Retorna ao tamanho original */
+}
+/* Contêiner para lembrete e senha esquecida */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    font-size: 14px;
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.remember-forgot input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: #007bff;
+}
+
+.remember-forgot a {
+    color: #0056b3;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+   
+}
+
+.remember-forgot a:hover {
+    color: #2e70b8;
+    text-decoration: underline;
+}
+
+.forgot-password {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Ajustes para telas menores */
 @media screen and (max-width: 1330px) {
     .form-image {
         display: none;
