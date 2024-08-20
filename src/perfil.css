@@ -8,21 +8,93 @@ body {
     text-align: center;
 }
 header {
-    background: #e9882e;
+    background: #f04907b7;
     color: #fff;
-    padding: 10px 0;
+    padding: 10px;
     text-align: center;
+    margin: 1px 10px;
+   
 }
-
-nav a {
-    color:  black;
-    text-decoration: none;
-    margin: 0 15px;
-    padding: 5px 10px;
-}
+    nav {
+        text-align: center;
+        color: #7e3011ce;
+        font-weight: 500;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-bottom: 20px;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        padding: 5px 10px;
+    }
+    
+    nav a:hover {
+        text-decoration: underline;
+        background-color: #fdd663;
+        color: #fff;
+    }
+    
+    
+    
+    .menu {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    
+    
+    .menu-item {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .menu-item:hover {
+        background-color: #fdd663;
+        color: #fff;
+        
+    }
+    
+    .dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        z-index: 1;
+    }
+    
+    .dropdown a {
+        display: block;
+        padding: 10px 20px;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    .dropdown a:hover {
+        background-color: #fdd663;
+        color:#333;
+    }
+    
+    .menu-item:hover .dropdown {
+        display: block;
+    }
 
 .profile-header {
-    background: #e9882e;
+    background: #7e3011ce;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -102,7 +174,7 @@ nav a {
 }
 
 .recipe-card .button {
-    background-color: #007bff;
+    background-color: #7e3011ce;
     color: #fff;
     padding: 10px;
     text-decoration: none;
@@ -111,17 +183,18 @@ nav a {
 }
 
 .recipe-card .button:hover {
-    background-color: #0056b3;
+    background-color: #fdd663;
 }
 
 footer {
-    background: #e9710f;
-    color: black;
+    background: #f04907b7;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
     position: relative;
     width: 100%;
     bottom: 0;
+    margin: 10px;
 }
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -129,4 +202,151 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     margin: 0;
+}
+
+.input-button {
+    background-color: #7e3011ce;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+}
+.input-button:hover {
+    background-color: #fdd663;
+}
+
+.submit-button {
+    background-color: #7e3011ce;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+.submit-button:hover {
+    background-color: #fdd663;
+}
+
+@media (max-width: 768px){
+    .menu {
+    flex-direction: column;
+}}
+.recipes-container {
+    flex-direction: column;
+}
+.button, .login-button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button:hover, .login-button:hover {
+    background-color:#e4cf10;
+    transform: scale(1.05);
+}
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+    
+}
+h2{
+    text-align: center;
+}
+/* Contêiner dos ícones de mídias sociais */
+.social-media {
+    display: flex; /* Alinha os ícones em linha */
+    justify-content: center; /* Alinha os ícones horizontalmente ao centro */
+    gap: 15px; /* Espaço entre os ícones */
+    margin: 20px 0; /* Margem acima e abaixo do contêiner */
+  }
+  
+  /* Estilo para os links dos ícones */
+  .social-media a {
+    color:#e4cf10; /* Cor padrão dos ícones */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 24px; /* Tamanho dos ícones */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transições suaves para cor e transformações */
+  }
+  
+  /* Estilo para os ícones ao passar o mouse */
+  .social-media a:hover {
+    color: #007bff; /* Cor dos ícones ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho dos ícones ao passar o mouse */
+  }
+
+  
+  /* Estilo para a seção de informações de contato */
+
+.contact-info {
+    max-width: 600px; /* Define a largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f4f4f4; /* Cor de fundo da seção */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor do contêiner */
+    text-align: center; /* Alinha o texto ao centro */
+  }
+  
+  /* Estilo para o parágrafo */
+  .contact-info p {
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+  }
+  
+  /* Estilo para o link de e-mail */
+  .contact-info a {
+    color: #f04907b7; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Deixa o texto em negrito */
+  }
+  
+  /* Estilo do link ao passar o mouse */
+  .contact-info a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  }
+
+/* CSS para a barra de pesquisa */
+#search-form {
+    display: flex;
+    align-items: center;
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 1rem auto; /* Centraliza o formulário horizontalmente */
+    padding: 0.5rem;
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5); /* Sombra leve amarela */
+    background-color: #fff; /* Cor de fundo do formulário */
+}
+
+#search-input {
+    flex: 1; /* Faz o campo de entrada ocupar o máximo de espaço disponível */
+    padding: 0.5rem 1rem; /* Espaçamento interno do campo de entrada */
+    border: 1px solid #f4c542; /* Borda amarela clara ao redor do campo de entrada */
+    border-radius: 5px 0 0 5px; /* Bordas arredondadas apenas no lado esquerdo */
+    font-size: 1rem; /* Tamanho da fonte */
+    outline: none; /* Remove a borda de foco padrão */
+    transition: border-color 0.3s ease; /* Transição suave para a cor da borda */
+}
+
+#search-input:focus {
+    border-color: #f7b82d; /* Cor da borda amarela ao focar no campo de entrada */
+}
+.button {
+    display:inline-block;
+    padding: 10px 20px;
+    background-color: #f04907b7;;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.button:hover {
+    background-color:black;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05); 
 }

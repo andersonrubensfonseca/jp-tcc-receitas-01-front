@@ -267,13 +267,15 @@ h2{
     border-radius: 10px;
     border: 1px solid #f0490fb7;
     padding: 10px;
-    margin:  20px;
+    margin: 60px 60px; /* Margem ao redor do card */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 /* Estilo da avaliação e Estrelas*/
 .stars {
     font-size: 2em;
     cursor: pointer;
+    unicode-bidi: bidi-override;
+    direction: rtl;
 }
 
 .stars span {

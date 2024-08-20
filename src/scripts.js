@@ -247,3 +247,39 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+// Editar Perfil
+// Função para mostrar uma pré-visualização da imagem selecionada
+function previewImage(event) {
+    const input = event.target;
+    if (input.files && input.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const img = document.createElement('img');
+            img.src = e.target.result;
+            img.style.maxWidth = '150px'; // Ajuste o tamanho conforme necessário
+            img.style.borderRadius = '8px'; // Ajuste o estilo conforme necessário
+
+            // Remove a imagem antiga, se houver
+            const oldImg = document.querySelector('#profile-picture-preview');
+            if (oldImg) {
+                oldImg.remove();
+            }
+
+            // Adiciona a nova imagem ao formulário
+            input.parentElement.insertBefore(img, input.nextSibling);
+            img.id = 'profile-picture-preview';
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+// Validação do formulário antes do envio
+document.getElementById('edit-profile-form').addEventListener('submit', function(event) {
+    const newPassword = document.getElementById('new-password').value;
+    const confirmPassword = document.getElementById('confirm-password').value;
+
+    if (newPassword !== '' && newPassword !== confirmPassword) {
+        alert('As novas senhas não coincidem.');
+        event.preventDefault(); // Impede o envio do formulário
+    }
+});

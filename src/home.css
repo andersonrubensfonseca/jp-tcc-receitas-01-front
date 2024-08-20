@@ -148,16 +148,16 @@ footer {
     color: black;
     text-align: center;
     border-radius: 10px;
-    border: 1px solid #fff;
-    padding: 10px;
+    border: 1px solid  #f0490fb7;
+    padding: 20px;
     margin: 20px ;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    border-color: #f0490fb7;
 }
 .card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
+
 }
 .card ul li {
     margin-bottom: 10px;
@@ -320,4 +320,62 @@ button {
 
 button:hover {
     background-color: #f4c542; /* Cor de fundo amarela clara ao passar o mouse sobre o botão */
+}
+
+
+.featured-recipes {
+    padding: 20px;
+}
+
+.recipe-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 15px;
+    font-size: 1.2em;
+}
+
+.card .button {
+    margin: 15px;
+}
+.testimonials {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 5px solid #f04907b7;
+    background-color: #fff;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
 }

@@ -1,0 +1,330 @@
+/* home.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: #f04907b7;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 1px 10px;
+}
+
+
+
+/* Estilo dos títulos */
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilos do nav */
+nav {
+    text-align: center;
+    color: #7e3011ce;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #fdd663;
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Estilo do Menu */
+.menu-item {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #fdd663;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown a:hover {
+    background-color: #fdd663;
+    color: black;
+}
+
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+/* Estilos do main */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Centralizar imagens */
+.img-center {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+
+
+/* Estilos do parágrafo e lista */
+p, ul {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+p {
+    margin-bottom: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger
+}
+
+/* Estilos dos Cards */
+.card {
+    background-color: #e095729a;
+    color: black;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid #f0490fb7;
+    padding: 20px; /* Espaçamento interno para evitar que o conteúdo toque as bordas */
+    margin: 60px 60px; /* Margem ao redor do card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex; /* Utiliza Flexbox para centralizar o conteúdo */
+    flex-direction: column; /* Organiza o conteúdo em uma coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: auto; /* Permite que a altura do card se ajuste automaticamente */
+    max-width: 100%; /* Garante que o card não exceda a largura da tela */
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse as bordas do card */
+   
+    
+}
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+.card ul li {
+    margin-bottom: 10px;
+
+}
+.recipe {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',;
+    width: 100%;
+}
+
+/* Estilo da avaliação e Estrelas */
+.rating {
+    margin: 20px 0;
+}
+
+.stars {
+    font-size: 2em;
+    cursor: pointer;
+    text-align: center;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.stars span {
+    color: #ddd;
+}
+
+.stars span:hover,
+.stars span:hover ~ span::before {
+    color: gold;
+}
+
+.stars span.selected {
+    color: gold;
+}
+
+#rating-message {
+    font-weight: bold;
+}
+
+/* Estilo do rodapé */
+footer {
+    background: #f04907b7;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 1px 10px;
+    position: relative;
+    width: 100%;
+}
+
+/* Contêiner dos ícones de mídias sociais */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.social-media a {
+    color: #e4cf10;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+/* Estilo da seção de informações de contato */
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-info a {
+    color: #f04907b7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* CSS para a barra de pesquisa */
+#search-form {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+    background-color: #fff;
+}
+
+#search-input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: 1px solid #f4c542;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#search-input:focus {
+    border-color: #f7b82d;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #f7b82d;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f4c542;
+}
+
+ul, ol {
+    font-family:cursive;
+    list-style-position: inside; /* Marcadores alinhados com o texto */
+    padding-left: 20px; /* Espaçamento à esquerda das listas */
+    margin: 0; /* Remove a margem padrão */
+  }
+  ul li, ol li {
+    margin-bottom: 10px; /* Espaçamento inferior entre os itens */
+    padding: 5px 0; /* Espaçamento interno opcional (topo e base) */
+}
+@media (max-width: 768px){
+    .menu {
+    flex-direction: column;
+}}
