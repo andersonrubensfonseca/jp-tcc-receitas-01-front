@@ -9,12 +9,30 @@ datasource db {
 
 model pessoas {
   ID        Int             @id
-  NOME      String?         @db.VarChar(150)
-  SOBRENOME String?         @db.VarChar(150)
-  EMAIL     String?         @unique(map: "EMAIL") @db.VarChar(255)
+  NOME      String          @db.VarChar(100)
+  SOBRENOME String          @db.VarChar(100)
+  EMAIL     String          @unique(map: "EMAIL") @db.VarChar(255)
   CELULAR   String?         @db.VarChar(20)
-  SENHA     String?         @db.VarChar(150)
+  SENHA     String          @db.VarChar(150)
   GENERO    pessoas_GENERO?
+}
+
+model categorias {
+  ID       Int        @id
+  NOME     String     @db.VarChar(100)
+  receitas receitas[]
+}
+
+model receitas {
+  ID              Int         @id
+  TITULO          String      @db.VarChar(255)
+  DESCRICAO       String?     @db.Text
+  INGREDIENTES    String?     @db.Text
+  MODO_DE_PREPARO String?     @db.Text
+  CATEGORIA_ID    Int?
+  categorias      categorias? @relation(fields: [CATEGORIA_ID], references: [ID], onDelete: Restrict, onUpdate: Restrict, map: "receitas_ibfk_1")
+
+  @@index([CATEGORIA_ID], map: "CATEGORIA_ID")
 }
 
 enum pessoas_GENERO {

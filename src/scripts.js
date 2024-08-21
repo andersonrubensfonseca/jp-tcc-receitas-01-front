@@ -1,22 +1,28 @@
 // script.js
 document.addEventListener('DOMContentLoaded', function() {
     // Função para avaliar receitas
-    function handleRating(event) {
-        const star = event.target;
-        if (star.classList.contains('star')) {
-            const ratingValue = star.dataset.value;
-            const starsContainer = star.closest('.stars');
-            if (starsContainer) {
-                starsContainer.querySelectorAll('span').forEach((s, index) => {
-                    s.innerHTML = index < ratingValue ? '&#9733;' : '&#9734;';
-                });
-                const ratingMessage = starsContainer.nextElementSibling; // Assuming the message is next to the stars
-                if (ratingMessage) {
-                    ratingMessage.textContent = `Você avaliou com ${ratingValue} estrela(s).`;
-                }
+function handleRating(event) {
+    const star = event.target;
+    if (star.classList.contains('star')) {
+        const ratingValue = Number(star.dataset.value); // Converte o valor para número
+        const starsContainer = star.closest('.stars');
+        if (starsContainer) {
+            starsContainer.querySelectorAll('span').forEach((s, index) => {
+                s.innerHTML = index < ratingValue ? '&#9733;' : '&#9734;'; // Atualiza as estrelas
+            });
+            const ratingMessage = starsContainer.nextElementSibling; // Assume que a mensagem está ao lado das estrelas
+            if (ratingMessage) {
+                ratingMessage.textContent = `Você avaliou com ${ratingValue} estrela(s).`; // Atualiza a mensagem
             }
         }
     }
+}
+
+// Adiciona o event listener para os spans dentro do container de estrelas
+document.querySelectorAll('.stars span').forEach(star => {
+    star.addEventListener('click', handleRating);
+});
+
 
     // Adiciona o evento de clique para todas as estrelas de avaliação
     document.querySelectorAll('.stars').forEach(starsContainer => {
@@ -283,3 +289,4 @@ document.getElementById('edit-profile-form').addEventListener('submit', function
         event.preventDefault(); // Impede o envio do formulário
     }
 });
+

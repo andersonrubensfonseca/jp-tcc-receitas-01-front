@@ -1,209 +1,241 @@
+/* Define o estilo básico para todo o corpo e HTML */
 body, html {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-}
-
-header {
-    background: #f04907b7;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    margin: 1px 10px;
-}
-
-h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: xx-large;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0;
-}
-
-nav {
-    text-align: center;
-    color: #7e3011ce;
-    font-weight: 500;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-bottom: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    padding: 5px 10px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-    background-color: #fdd663;
-    color: #fff;
-}
-
-
-
-.menu {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-
-
-.menu-item {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-.menu-item:hover {
-    background-color: #fdd663;
-    color: #fff;
-    
-}
-
-.dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    z-index: 1;
-}
-
-.dropdown a {
-    display: block;
-    padding: 10px 20px;
-    color: #333;
-    text-decoration: none;
-}
-
-.dropdown a:hover {
-    background-color: #fdd663;
-    color: black;
-}
-
-.menu-item:hover .dropdown {
-    display: block;
-}
-
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-.button {
-    display:inline-block;
-    padding: 10px 20px;
-    background-color: #f04907b7;;
-    color: black;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    text-align: center;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-}
-
-.button:hover {
-    background-color:black;
-    color: black;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    transform: scale(1.05); 
-}
-.button:active {
-    background-color: #fff;
-    transform: translateY(1px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-footer {
-    background: #f04907b7;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-}
-
-
-.card {
-    background-color: #e095729a;
-    color: black;
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid #f0490fb7;
-    padding: 10px;
-    margin:  60px 60px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
-}
-.card ul li {
-    margin-bottom: 10px;
-}
-
-.recipe {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',;
-    width: 100%;
-}
-
-.recipe img {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-}
-ul, ol {
-    font-family:cursive;
-    list-style-position: inside; /* Marcadores alinhados com o texto */
-    padding-left: 20px; /* Espaçamento à esquerda das listas */
+    font-family: Arial, sans-serif; /* Define a fonte padrão como Arial ou uma fonte genérica sans-serif */
     margin: 0; /* Remove a margem padrão */
-  }
-  ul li, ol li {
-    margin-bottom: 10px; /* Espaçamento inferior entre os itens */
-    padding: 5px 0; /* Espaçamento interno opcional (topo e base) */
+    padding: 0; /* Remove o preenchimento padrão */
+    background-color: #fff; /* Define a cor de fundo como branca */
 }
 
-@media (max-width: 768px){
+/* Estiliza o cabeçalho */
+header {
+    background: #f04907b7; /* Define a cor de fundo do cabeçalho com um tom de laranja translúcido */
+    color: #fff; /* Define a cor do texto como branco */
+    padding: 10px; /* Adiciona 10px de preenchimento ao redor do conteúdo */
+    text-align: center; /* Centraliza o texto */
+    margin: 1px 10px; /* Adiciona uma margem de 1px na parte superior e inferior e 10px nas laterais */
+}
+
+/* Estiliza o título principal (h1) */
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Define a fonte do título com uma lista de fontes alternativas */
+    font-size: xx-large; /* Define o tamanho da fonte como muito grande */
+    text-align: center; /* Centraliza o texto */
+    text-transform: uppercase; /* Converte o texto para letras maiúsculas */
+    margin: 0; /* Remove a margem padrão */
+}
+
+/* Estiliza a navegação */
+nav {
+    text-align: center; /* Centraliza o texto */
+    color: #7e3011ce; /* Define a cor do texto com um tom de marrom translúcido */
+    font-weight: 500; /* Define o peso da fonte como médio */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Define a fonte com uma lista de fontes alternativas */
+    margin-bottom: 20px; /* Adiciona uma margem de 20px na parte inferior */
+}
+
+
+/* Estiliza os links dentro do elemento <nav> */
+nav a {
+    color: #fff; /* Define a cor do texto dos links como branco */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    margin: 0 15px; /* Adiciona uma margem horizontal de 15px aos links */
+    padding: 5px 10px; /* Adiciona um preenchimento interno de 5px na vertical e 10px na horizontal aos links */
+}
+
+/* Estiliza os links quando o cursor está sobre eles */
+nav a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado ao texto quando o cursor está sobre o link */
+    background-color: #fdd663; /* Altera a cor de fundo para um tom de amarelo claro quando o cursor está sobre o link */
+    color: #fff; /* Mantém a cor do texto como branco quando o cursor está sobre o link */
+}
+
+/* Estiliza o menu, que usa flexbox para alinhamento */
+.menu {
+    display: flex; /* Define o container como um flex container */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Define um espaço de 20px entre os itens do menu */
+}
+
+/* Estiliza cada item do menu */
+.menu-item {
+    position: relative; /* Define a posição relativa para permitir posicionamento absoluto dos elementos filhos */
+    display: inline-block; /* Define cada item do menu como um bloco inline para alinhar horizontalmente */
+    padding: 10px 20px; /* Adiciona um preenchimento interno de 10px na vertical e 20px na horizontal */
+    color: #fff; /* Define a cor do texto dos itens como branco */
+    border-radius: 5px; /* Adiciona bordas arredondadas com raio de 5px */
+    cursor: pointer; /* Altera o cursor para uma mão quando passa sobre o item */
+    margin-right: 0px; /* Remove a margem direita (a margem direita é 0px) */
+    margin-bottom: 10px; /* Adiciona uma margem inferior de 10px */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos para a cor de fundo e a cor do texto */
+}
+
+/* Estiliza os itens do menu quando o cursor está sobre eles */
+.menu-item:hover {
+    background-color: #fdd663; /* Altera a cor de fundo para um tom de amarelo claro quando o cursor está sobre o item */
+    color: #fff; /* Mantém a cor do texto como branco quando o cursor está sobre o item */
+}
+
+/* Estiliza o menu suspenso (dropdown) */
+.dropdown {
+    display: none; /* Oculta o menu suspenso por padrão */
+    position: absolute; /* Posiciona o menu suspenso de forma absoluta em relação ao seu contêiner pai */
+    top: 100%; /* Posiciona o menu suspenso imediatamente abaixo do elemento pai */
+    left: 0; /* Alinha o menu suspenso com a borda esquerda do elemento pai */
+    list-style-type: none; /* Remove os marcadores padrão de lista */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove a margem padrão */
+    background-color: #fff; /* Define a cor de fundo do menu suspenso como branca */
+    border: 1px solid #ddd; /* Adiciona uma borda de 1px com uma cor cinza clara ao redor do menu suspenso */
+    border-radius: 5px; /* Adiciona bordas arredondadas com raio de 5px */
+    z-index: 1; /* Define o nível de empilhamento para garantir que o menu suspenso apareça sobre outros elementos */
+}
+
+/* Estiliza os links dentro do menu suspenso */
+.dropdown a {
+    display: block; /* Faz com que cada link ocupe a largura total disponível e apareça como um bloco */
+    padding: 10px 20px; /* Adiciona um preenchimento interno de 10px na vertical e 20px na horizontal aos links */
+    color: #333; /* Define a cor do texto dos links como um tom de cinza escuro */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+
+/* Estiliza os links dentro do menu suspenso quando o cursor está sobre eles */
+.dropdown a:hover {
+    background-color: #fdd663; /* Altera a cor de fundo para um tom de amarelo claro quando o cursor está sobre o link */
+    color: black; /* Altera a cor do texto para preto quando o cursor está sobre o link */
+}
+
+/* Exibe o menu suspenso quando o item do menu é hoverizado */
+.menu-item:hover .dropdown {
+    display: block; /* Torna o menu suspenso visível quando o cursor está sobre o item do menu */
+}
+
+/* Estiliza a seção principal */
+main {
+    padding: 20px; /* Adiciona um preenchimento interno de 20px ao redor do conteúdo */
+    text-align: center; /* Centraliza o texto dentro da seção principal */
+}
+
+/* Estiliza os botões */
+.button {
+    display: inline-block; /* Faz com que o botão seja exibido como um bloco inline, permitindo o alinhamento ao lado de outros elementos */
+    padding: 10px 20px; /* Adiciona um preenchimento interno de 10px na vertical e 20px na horizontal */
+    background-color: #f04907b7; /* Define a cor de fundo do botão com um tom de laranja translúcido */
+    color: black; /* Define a cor do texto do botão como preto */
+    text-decoration: none; /* Remove o sublinhado padrão dos links (se o botão for um link) */
+    border-radius: 8px; /* Adiciona bordas arredondadas com raio de 8px */
+    font-size: 16px; /* Define o tamanho da fonte como 16px */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Define a fonte com uma lista de fontes serifadas alternativas */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    transition: all 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos para todas as propriedades */
+    border: 2px solid transparent; /* Define uma borda de 2px ao redor do botão, inicialmente transparente */
+}
+
+
+/* Estiliza o botão quando o cursor está sobre ele */
+.button:hover {
+    background-color: black; /* Altera a cor de fundo para preto quando o cursor está sobre o botão */
+    color: black; /* Altera a cor do texto para preto (note que isso pode não ser visível se o fundo também for preto) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao redor do botão para criar um efeito de elevação */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão em 5% */
+}
+
+/* Estiliza o botão quando ele é pressionado (estado ativo) */
+.button:active {
+    background-color: #fff; /* Altera a cor de fundo para branco quando o botão está sendo pressionado */
+    transform: translateY(1px); /* Move o botão ligeiramente para baixo para simular um efeito de pressionamento */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduz a sombra ao redor do botão quando ele está sendo pressionado */
+}
+
+/* Estiliza o rodapé */
+footer {
+    background: #f04907b7; /* Define a cor de fundo do rodapé com um tom de laranja translúcido */
+    color: #fff; /* Define a cor do texto como branco */
+    text-align: center; /* Centraliza o texto dentro do rodapé */
+    padding: 10px ; /* Adiciona um preenchimento interno de 10px na parte superior e inferior */
+    position: relative; /* Define a posição do rodapé como relativa */
+    width: 100%; /* Faz com que o rodapé ocupe toda a largura da tela */
+    bottom: 0; /* Garante que o rodapé esteja alinhado ao fundo do contêiner pai (não sempre necessário se `position: relative` já estiver definido) */
+    margin: 1px 10px;  /* Adiciona uma margem de 1px na parte superior e inferior e 10px nas laterais */
+}
+
+
+
+/* Estiliza o contêiner do cartão */
+.card {
+    background-color: #e095729a; /* Define a cor de fundo do cartão com um tom de rosa translúcido */
+    color: black; /* Define a cor do texto como preto */
+    text-align: center; /* Centraliza o texto dentro do cartão */
+    border-radius: 10px; /* Adiciona bordas arredondadas com raio de 10px */
+    border: 1px solid #f0490fb7; /* Adiciona uma borda de 1px com uma cor de laranja translúcido ao redor do cartão */
+    padding: 10px; /* Adiciona um preenchimento interno de 10px ao redor do conteúdo */
+    margin: 60px 60px; /* Adiciona uma margem de 60px nas laterais e na parte superior e inferior do cartão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao redor do cartão para criar um efeito de elevação */
+}
+
+/* Estiliza o cartão quando o cursor está sobre ele */
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao redor do cartão para intensificar o efeito de elevação */
+    transform: translateY(-5px); /* Move o cartão ligeiramente para cima para simular um efeito de flutuação */
+}
+
+/* Estiliza os itens de lista dentro de um cartão */
+.card ul li {
+    margin-bottom: 10px; /* Adiciona uma margem inferior de 10px a cada item da lista */
+}
+
+/* Estiliza o contêiner de receita */
+.recipe {
+    font-family:Arial, Helvetica, sans-serif; /* Define a fonte com uma lista de fontes alternativas sans-serif */
+    width: 100%; /* Faz com que o contêiner de receita ocupe toda a largura disponível */
+}
+
+
+/* Estiliza as imagens dentro do contêiner de receita */
+.recipe img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner pai */
+    height: auto; /* Mantém a proporção original da imagem */
+    max-width: 600px; /* Define a largura máxima da imagem como 600px */
+    border-radius: 8px; /* Adiciona bordas arredondadas com raio de 8px à imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao redor da imagem para criar um efeito de elevação */
+}
+
+/* Estiliza listas ordenadas e não ordenadas */
+ul, ol {
+    font-family: cursive; /* Define a fonte para listas como cursiva */
+    list-style-position: inside; /* Alinha os marcadores com o texto da lista */
+    padding-left: 20px; /* Adiciona um preenchimento à esquerda das listas para separar o texto dos marcadores */
+    margin: 0; /* Remove a margem padrão das listas */
+}
+
+/* Estiliza os itens das listas ordenadas e não ordenadas */
+ul li, ol li {
+    margin-bottom: 10px; /* Adiciona uma margem inferior de 10px entre os itens da lista */
+    padding: 5px 0; /* Adiciona um preenchimento interno opcional de 5px na parte superior e inferior dos itens da lista */
+}
+
+/* Estilos responsivos para telas com largura máxima de 768px */
+@media (max-width: 768px) {
     .menu {
-    flex-direction: column;
-}}
+        flex-direction: column; /* Alinha os itens do menu em uma coluna em vez de linha em telas menores */
+    }
+}
+
+/* Estiliza o contêiner de receitas */
 .recipes-container {
-    flex-direction: column;
+    flex-direction: column; /* Alinha os itens dentro do contêiner de receitas em uma coluna */
 }
-.button, .login-button {
-    transition: background-color 0.3s ease, transform 0.3s ease;
+
+/* Estiliza os parágrafos */
+p {
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte para os parágrafos como Arial, ou fontes alternativas sans-serif */
+    font-size: larger; /* Define o tamanho da fonte como maior que o padrão */
 }
-.button:hover, .login-button:hover {
-    background-color:#e4cf10;
-    transform: scale(1.05);
-}
-p{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: larger;
-    
-}
-h2{
-    text-align: center;
+
+/* Estiliza os títulos de nível 2 (h2) */
+h2 {
+    text-align: center; /* Centraliza o texto dos títulos de nível 2 */
 }
 /* Contêiner dos ícones de mídias sociais */
 .social-media {

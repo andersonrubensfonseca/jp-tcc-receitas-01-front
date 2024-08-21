@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+      <!-- Define o charset da página como UTF-8 para suportar caracteres especiais -->
     <meta charset="UTF-8">
+    <!-- Define a viewport para tornar a página responsiva em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Define o título da página que aparece na aba do navegador -->
     <title>Receitas De Bebidas - Delícias na Cozinha</title>
-   
+   <!-- Link para o arquivo CSS local -->
     <link rel="stylesheet" href="./bebidas.css">
+     <!-- Link para o arquivo CSS da Font Awesome, que fornece ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 <body>
     <header>
+        <!-- Logotipo da página -->
         <img src="imagens/logo2.png" alt="Delícias na Cozinha" width=350 height=350>
         <nav>
+            <!-- Links de navegação do site -->
             <a href="home.html">Início</a>
             <div class="menu-item">
                 Receitas
                 <div class="dropdown">
+                    <!-- Submenu de receitas -->
                     <a href="receitasdoces.html">Receitas Doces</a>
                     <a href="./receitassalgadas.html">Receitas Salgadas</a>
                     <a href="./carnes.html">Receitas com Carnes</a>
+                    <a href="./rec_internacionais.html">Receitas Internacionais</a>
                     <a href="./bebidas.html">Receitas de Bebidas</a>
                 </div>
             </div>
         <a href="sobre.html">Sobre</a>
         <a href="login.html">Login</a>
+        <!-- Formulário de busca -->
         <form id="search-form" action="https://www.###.com/search" method="get">
             <input type="text" id="search-input" name="q" placeholder="Buscar..." required>
             <button type="submit">Buscar</button>
@@ -33,13 +42,14 @@
 </header>
     <div style="text-align: center;">
         <br>
+    <!-- Título e descrição da seção de bebidas -->
     <h2>Explosão de Sabores: Nossas Melhores Receitas de Bebidas:</h2>
     <p>As bebidas estão presentes nas refeições do dia a dia e nas ocasiões mais especiais. Seja um café passado pela manhã, um suco na hora do almoço,<br> uma vitamina no lanche da tarde ou um drink para uma festa, aqui você encontra as melhores receitas de bebidas com e sem álcool.</p>
-
 
     <main>
         <section id="bebidas.html">
             <div class="recipes-container">
+                <!-- Receita 1: Vitamina de Abacate e Hortelã -->
                 <div class="recipe">
                 <div style="text-align: center;">
                     <h2>Vitamina de Abacate e Hortelã</h2>
@@ -74,6 +84,7 @@
                         <p id="rating-message"></p>
                     </div>
                     <br>
+                    <!-- Receita 2: Vitamina de Morango e Aveia -->
                     <div style="text-align: center;">
                     <h2>Vitamina de Morango e Aveia</h2>
                     <img src="https://www.guiadasemana.com.br/contentFiles/image/opt_w720h445/2018/10/FEA/50961_shutterstock-276541955.jpg" alt="Vitamina de Morango e Aveia" width="600" height="400">
@@ -109,6 +120,7 @@
                     <br>
                 </div>
             </div>
+                <!-- Receita 3: Drink de Laranja -->
                 <div style="text-align: center;">
                 <h2>Drink de Laranja</h2>
                         <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/02/10/istock-538644352-uve483uoovu9.jpg" alt="Drink de Laranja"  width="600" height="400">
@@ -148,6 +160,7 @@
                     <br>
                 </div>
             </div>
+                    <!-- Receita 4: Caipirinha de Limão -->
                     <div style="text-align: center;">
                     <h2>Caipirinha de Limão</h2>
                     <img src="https://www.xreceitas.com.br/wp-content/uploads/2023/12/receita-de-caipirinha-de-limao.webp" alt="Caipirinha de Limão"  width="600" height="400">
@@ -187,7 +200,8 @@
                 </div>
             </div>
             <br>
-            <div style="text-align: center;">
+            <!-- Receita 5: Cappuccino Caseiro -->
+             <div style="text-align: center;">
              <h2>Cappuccino Caseiro</h2>
                         <img src="https://blog.cybercook.com.br/wp-content/uploads/2022/07/capuccino-caseiro-suavizando-e-saborizando-o-seu-cafe.jpg" alt="Cappuccino Caseiro"  width="600" height="400">
                     <p>O cappuccino é quente e reconfortante, com poucos ingredientes e um modo de preparo muito simples, ele vai te surpreender!</p>
@@ -222,6 +236,7 @@
                             <span data-value="5">&#9733;</span>
                         </div>
                         <br>
+                        <!-- Receita 6: Café Cremoso -->
                         <div style="text-align: center;">
                             <h2>Café Cremoso</h2>
                                        <img src="https://storage.googleapis.com/imagens_videos_gou_cooking_prod/production/cooking/HvofeMlwMOzmpuAbbEsvfWriiMFC5Z4u9f0jTpUZ.jpeg" alt="Café Cremoso"  width="600" height="400">
@@ -246,173 +261,228 @@
                                        </ol>
                                    </div>
                                    <br>
-                                   <div class="rating">
-                                       <h2>Avalie esta receita:</h2>
-                                       <div class="stars">
-                                           <span data-value="1">&#9733;</span>
-                                           <span data-value="2">&#9733;</span>
-                                           <span data-value="3">&#9733;</span>
-                                           <span data-value="4">&#9733;</span>
-                                           <span data-value="5">&#9733;</span>
-                                       </div>
-                                       <br>
-                        <div style="text-align: center;">
-                            <h2>Chocolate Quente com Nutella</h2>
-                                       <img src="https://cdn0.tudoreceitas.com/pt/posts/7/0/4/chocolate_quente_com_nutella_11407_orig.jpg" alt="Chocolate Quente com Nutella"  width="600" height="400">
-                                   <p>Perfeito para os dias mais frios!</p>
-                                       <div class="card">
-                                           <h2>INGREDIENTES:</h2>
-                                           <ul>
-                                               <li>50 ml de creme de leite;</li>
-                                               <li>2 colheres (sopa) de nutella;</li>
-                                               <li>70 gramas de chocolate em pó meio-amargo;</li>
-                                               <li>150 ml de leite integral.</li>
-                                           </ul>
-                                       </div>
-                                       <br>
-                                       <div class="card">
-                                       <h2>MODO DE PREPARO:</h2>
-                                       <ol>
-                                           <li>Aqueça o creme de leite, adicione o chocolate em pó até formar um creme homogêneo e reserve;</li>
-                                           <li>Ferva o leite, retire do fogo e acrescente o creme de chocolate;</li>
-                                           <li>Adicione a nutella e mexa bem!</li>
-                                       </ol>
-                                   </div>
-                                   <br>
-                                   <div class="rating">
-                                       <h2>Avalie esta receita:</h2>
-                                       <div class="stars">
-                                           <span data-value="1">&#9733;</span>
-                                           <span data-value="2">&#9733;</span>
-                                           <span data-value="3">&#9733;</span>
-                                           <span data-value="4">&#9733;</span>
-                                           <span data-value="5">&#9733;</span>
-                                       </div>
-                                       <br>
-                                       <div style="text-align: center;">
-                                        <h2>Suco Verde Detox</h2>
-                                                   <img src="https://www.minhavidamagnolia.com.br/wp-content/uploads/2021/05/receita-de-suco-detox.jpg" alt="Suco Verde Detox"  width="600" height="400">
-                                               <p>Perfeito para os dias mais frios!</p>
-                                                   <div class="card">
-                                                       <h2>INGREDIENTES:</h2>
-                                                       <ul>
-                                                           <li>1 folha de couve;</li>
-                                                           <li>Suco de 1/2 limão;</li>
-                                                           <li>1 pedaço pequeno de pepino japonês;</li>
-                                                           <li>1 maçã vermelha picada;</li>
-                                                           <li>3/4 de xícara (chá) de água de coco (150 ml).</li>
-                                                       </ul>
-                                                   </div>
-                                                   <br>
-                                                   <div class="card">
-                                                   <h2>MODO DE PREPARO:</h2>
-                                                   <ol>
-                                                       <li>Bata os ingredientes no liquidificador por aproximadamente 2 minutos. Consuma em seguida.</li>
-                                                   </ol>
-                                               </div>
-                                               <br>
-                                               <div class="rating">
-                                                   <h2>Avalie esta receita:</h2>
-                                                   <div class="stars">
-                                                       <span data-value="1">&#9733;</span>
-                                                       <span data-value="2">&#9733;</span>
-                                                       <span data-value="3">&#9733;</span>
-                                                       <span data-value="4">&#9733;</span>
-                                                       <span data-value="5">&#9733;</span>
-                                                   </div>
-                                                   <br>
-                                                   <div style="text-align: center;">
-                                                    <h2>Suco Detox Couve, Beterraba e Cenoura</h2>
-                                                               <img src="https://blog.novidadesaudavel.com.br/wp-content/uploads/2023/09/suco-detox-de-beterraba-e-cenoura-receita-para-limpeza-e-energia_384.png" alt="Suco Detox Couve, Beterraba e Cenoura"  width="600" height="400">
-                                                           <p>A bebida ideal para a sua saúde!</p>
-                                                               <div class="card">
-                                                                   <h2>INGREDIENTES:</h2>
-                                                                   <ul>
-                                                                       <li>1 folha de Couve manteiga crua;</li>
-                                                                       <li>1 unidade pequena de Cenoura crua;</li>
-                                                                       <li>1 unidade pequena de Beterraba crua;</li>
-                                                                       <li>2 fatias médias de Abacaxi;</li>
-                                                                       <li>6 folhas de Hortelã;</li>
-                                                                       <li>Gengibre à gosto.</li>
-                                                                   </ul>
-                                                               </div>
-                                                               <br>
-                                                               <div class="card">
-                                                               <h2>MODO DE PREPARO:</h2>
-                                                               <ol>
-                                                                   <li>Coloque tudo no liquidificador, com 200 ml de agua, bate, depois coa e siva bem gelado.</li>
-                                                               </ol>
-                                                           </div>
-                                                           <br>
-                                                           <div class="rating">
-                                                               <h2>Avalie esta receita:</h2>
-                                                               <div class="stars">
-                                                                   <span data-value="1">&#9733;</span>
-                                                                   <span data-value="2">&#9733;</span>
-                                                                   <span data-value="3">&#9733;</span>
-                                                                   <span data-value="4">&#9733;</span>
-                                                                   <span data-value="5">&#9733;</span>
-                                                               </div>
-                                                               <br>
-                                                   <div style="text-align: center;">
-                                                    <h2>Espanhola</h2>
-                                                               <img src="https://vila-vinifera.com/wp-content/uploads/2017/03/drink-espanhola.jpg" alt="Espanhola"  width="600" height="400">
-                                                           <p>Uma bebida deliciosa, você vai amar!</p>
-                                                               <div class="card">
-                                                                   <h2>INGREDIENTES:</h2>
-                                                                   <ul>
-                                                                       <li>1 lata de leite condensado;</li>
-                                                                       <li>1 abacaxi médio sem o miolo;</li>
-                                                                       <li>1 litro de vinho suave;</li>
-                                                                       <li>Gelo.</li>
-                                                                   </ul>
-                                                               </div>
-                                                               <br>
-                                                               <div class="card">
-                                                               <h2>MODO DE PREPARO:</h2>
-                                                               <ol>
-                                                                   <li>Bater tudo no liquidificador e levar a geladeira antes de servir!</li>
-                                                               </ol>
-                                                           </div>
-                                                           <br>
-                                                           <div class="rating">
-                                                               <h2>Avalie esta receita:</h2>
-                                                               <div class="stars">
-                                                                   <span data-value="1">&#9733;</span>
-                                                                   <span data-value="2">&#9733;</span>
-                                                                   <span data-value="3">&#9733;</span>
-                                                                   <span data-value="4">&#9733;</span>
-                                                                   <span data-value="5">&#9733;</span>
-                                                               </div>
-                        <p id="rating-message"></p>
+
+                                   <!-- Seção de avaliação e receita -->
+<div class="rating">
+    <!-- Título da seção de avaliação -->
+    <h2>Avalie esta receita:</h2>
+    <!-- Div que contém as estrelas para avaliação -->
+    <div class="stars">
+        <!-- Estrela de avaliação com valor de 1 -->
+        <span data-value="1">&#9733;</span>
+        <!-- Estrela de avaliação com valor de 2 -->
+        <span data-value="2">&#9733;</span>
+        <!-- Estrela de avaliação com valor de 3 -->
+        <span data-value="3">&#9733;</span>
+        <!-- Estrela de avaliação com valor de 4 -->
+        <span data-value="4">&#9733;</span>
+        <!-- Estrela de avaliação com valor de 5 -->
+        <span data-value="5">&#9733;</span>
+    </div>
+    <br>
+    
+    <!-- Receita de Chocolate Quente com Nutella -->
+    <div style="text-align: center;">
+        <h2>Chocolate Quente com Nutella</h2>
+        <!-- Imagem da receita -->
+        <img src="https://cdn0.tudoreceitas.com/pt/posts/7/0/4/chocolate_quente_com_nutella_11407_orig.jpg" alt="Chocolate Quente com Nutella" width="600" height="400">
+        <!-- Descrição da receita -->
+        <p>Perfeito para os dias mais frios!</p>
+        
+        <!-- Div contendo os ingredientes da receita -->
+        <div class="card">
+            <h2>INGREDIENTES:</h2>
+            <ul>
+                <li>50 ml de creme de leite;</li>
+                <li>2 colheres (sopa) de nutella;</li>
+                <li>70 gramas de chocolate em pó meio-amargo;</li>
+                <li>150 ml de leite integral.</li>
+            </ul>
+        </div>
+        <br>
+        
+        <!-- Div contendo o modo de preparo da receita -->
+        <div class="card">
+            <h2>MODO DE PREPARO:</h2>
+            <ol>
+                <li>Aqueça o creme de leite, adicione o chocolate em pó até formar um creme homogêneo e reserve;</li>
+                <li>Ferva o leite, retire do fogo e acrescente o creme de chocolate;</li>
+                <li>Adicione a nutella e mexa bem!</li>
+            </ol>
+        </div>
+        <br>
+        
+        <!-- Seção de avaliação para a receita de Chocolate Quente com Nutella -->
+        <div class="rating">
+            <h2>Avalie esta receita:</h2>
+            <div class="stars">
+                <span data-value="1">&#9733;</span>
+                <span data-value="2">&#9733;</span>
+                <span data-value="3">&#9733;</span>
+                <span data-value="4">&#9733;</span>
+                <span data-value="5">&#9733;</span>
+            </div>
+            <br>
+            
+            <!-- Receita de Suco Verde Detox -->
+            <div style="text-align: center;">
+                <h2>Suco Verde Detox</h2>
+                <!-- Imagem da receita -->
+                <img src="https://www.minhavidamagnolia.com.br/wp-content/uploads/2021/05/receita-de-suco-detox.jpg" alt="Suco Verde Detox" width="600" height="400">
+                <!-- Descrição da receita -->
+                <p>Perfeito para os dias mais quentes!</p>
+                
+                <!-- Div contendo os ingredientes da receita -->
+                <div class="card">
+                    <h2>INGREDIENTES:</h2>
+                    <ul>
+                        <li>1 folha de couve;</li>
+                        <li>Suco de 1/2 limão;</li>
+                        <li>1 pedaço pequeno de pepino japonês;</li>
+                        <li>1 maçã vermelha picada;</li>
+                        <li>3/4 de xícara (chá) de água de coco (150 ml).</li>
+                    </ul>
+                </div>
+                <br>
+                
+                <!-- Div contendo o modo de preparo da receita -->
+                <div class="card">
+                    <h2>MODO DE PREPARO:</h2>
+                    <ol>
+                        <li>Bata os ingredientes no liquidificador por aproximadamente 2 minutos. Consuma em seguida.</li>
+                    </ol>
+                </div>
+                <br>
+                
+                <!-- Seção de avaliação para a receita de Suco Verde Detox -->
+                <div class="rating">
+                    <h2>Avalie esta receita:</h2>
+                    <div class="stars">
+                        <span data-value="1">&#9733;</span>
+                        <span data-value="2">&#9733;</span>
+                        <span data-value="3">&#9733;</span>
+                        <span data-value="4">&#9733;</span>
+                        <span data-value="5">&#9733;</span>
                     </div>
                     <br>
-                </div>
+                    
+                    <!-- Receita de Suco Detox Couve, Beterraba e Cenoura -->
+                    <div style="text-align: center;">
+                        <h2>Suco Detox Couve, Beterraba e Cenoura</h2>
+                        <!-- Imagem da receita -->
+                        <img src="https://blog.novidadesaudavel.com.br/wp-content/uploads/2023/09/suco-detox-de-beterraba-e-cenoura-receita-para-limpeza-e-energia_384.png" alt="Suco Detox Couve, Beterraba e Cenoura" width="600" height="400">
+                        <!-- Descrição da receita -->
+                        <p>A bebida ideal para a sua saúde!</p>
+                        
+                        <!-- Div contendo os ingredientes da receita -->
+                        <div class="card">
+                            <h2>INGREDIENTES:</h2>
+                            <ul>
+                                <li>1 folha de Couve manteiga crua;</li>
+                                <li>1 unidade pequena de Cenoura crua;</li>
+                                <li>1 unidade pequena de Beterraba crua;</li>
+                                <li>2 fatias médias de Abacaxi;</li>
+                                <li>6 folhas de Hortelã;</li>
+                                <li>Gengibre à gosto.</li>
+                            </ul>
+                        </div>
+                        <br>
+                        
+                        <!-- Div contendo o modo de preparo da receita -->
+                        <div class="card">
+                            <h2>MODO DE PREPARO:</h2>
+                            <ol>
+                                <li>Coloque tudo no liquidificador, com 200 ml de água, bata, depois coe e sirva bem gelado.</li>
+                            </ol>
+                        </div>
+                        <br>
+                        
+                        <!-- Seção de avaliação para a receita de Suco Detox Couve, Beterraba e Cenoura -->
+                        <div class="rating">
+                            <h2>Avalie esta receita:</h2>
+                            <div class="stars">
+                                <span data-value="1">&#9733;</span>
+                                <span data-value="2">&#9733;</span>
+                                <span data-value="3">&#9733;</span>
+                                <span data-value="4">&#9733;</span>
+                                <span data-value="5">&#9733;</span>
+                            </div>
+                            <br>
+                            
+                            <!-- Receita de Espanhola -->
+                            <div style="text-align: center;">
+                                <h2>Espanhola</h2>
+                                <!-- Imagem da receita -->
+                                <img src="https://vila-vinifera.com/wp-content/uploads/2017/03/drink-espanhola.jpg" alt="Espanhola" width="600" height="400">
+                                <!-- Descrição da receita -->
+                                <p>Uma bebida deliciosa, você vai amar!</p>
+                                
+                                <!-- Div contendo os ingredientes da receita -->
+                                <div class="card">
+                                    <h2>INGREDIENTES:</h2>
+                                    <ul>
+                                        <li>1 lata de leite condensado;</li>
+                                        <li>1 abacaxi médio sem o miolo;</li>
+                                        <li>1 litro de vinho suave;</li>
+                                        <li>Gelo.</li>
+                                    </ul>
+                                </div>
+                                <br>
+                                
+                                <!-- Div contendo o modo de preparo da receita -->
+                                <div class="card">
+                                    <h2>MODO DE PREPARO:</h2>
+                                    <ol>
+                                        <li>Bater tudo no liquidificador e levar à geladeira antes de servir!</li>
+                                    </ol>
+                                </div>
+                                <br>
+                                
+                                <!-- Seção de avaliação para a receita de Espanhola -->
+                                <div class="rating">
+                                    <h2>Avalie esta receita:</h2>
+                                    <div class="stars">
+                                        <span data-value="1">&#9733;</span>
+                                        <span data-value="2">&#9733;</span>
+                                        <span data-value="3">&#9733;</span>
+                                        <span data-value="4">&#9733;</span>
+                                        <span data-value="5">&#9733;</span>
+                                    </div>
+                                    <p id="rating-message"></p>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </section>
+                </main>
             </div>
-        </section>
-
-    </main>
-   
-    <footer>
-        <p>&copy; 2024 Delícias na Cozinha - Todos os direitos reservados</p>
-        <p>Siga-nos nas redes sociais:</p>
-        <div class="social-media">
-            <a href="##" target="_blank" aria-label="Facebook">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="##" target="_blank" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-        
-            </a>
-            <a href="##" target="_blank" aria-label="X">
-                <i class="fab fa-x"></i>
-            </a>
         </div>
-        <div class="contact-info">
+    </section>
+</main>
+   
+<footer>
+    <!-- Informações do rodapé -->
+    <p>&copy; 2024 Delícias na Cozinha - Todos os direitos reservados</p>
+    <p>Siga-nos nas redes sociais:</p>
+    <div class="social-media">
+        <!-- Ícones das redes sociais -->
+        <a href="##" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="##" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="##" target="_blank" aria-label="X">
+            <i class="fab fa-x"></i>
+        </a>
+    </div>
+    <div class="contact-info">
+        <!-- Informações de contato -->
         <p>Entre em contato: <a href="###.com">contato@deliciasnacozinha.com</a></p>
     </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <script src="./scripts.js"></script>
+</footer>
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="./scripts.js"></script>
 </body>
 </html>

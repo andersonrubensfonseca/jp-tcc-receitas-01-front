@@ -191,6 +191,7 @@ p {
     margin: 20px 0;
 }
 
+/* Estilo da avaliação e Estrelas*/
 .stars {
     font-size: 2em;
     cursor: pointer;
@@ -204,7 +205,7 @@ p {
 }
 
 .stars span:hover,
-.stars span:hover ~ span::before {
+.stars span:hover ~ span {
     color: gold;
 }
 
@@ -222,7 +223,7 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
-    margin: 1px 10px;
+    margin: 1px 10px;  /* Adiciona uma margem de 1px na parte superior e inferior e 10px nas laterais */
     position: relative;
     width: 100%;
 }

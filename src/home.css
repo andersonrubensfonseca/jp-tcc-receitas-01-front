@@ -139,7 +139,7 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
-    margin: 10px;
+    margin: 1px 10px;  /* Adiciona uma margem de 1px na parte superior e inferior e 10px nas laterais */
 }
 
 
