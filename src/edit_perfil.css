@@ -1,3 +1,112 @@
+/* Estilos globais e de layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background: #f04907b7;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 1px 10px;
+}
+
+nav {
+    text-align: center;
+    color: #7e3011ce;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: #fdd663;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #fdd663;
+    color: #fff;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background-color: #fdd663;
+    color: #333;
+}
+
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer {
+    background: #f04907b7;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin: 10px;
+}
+
 /* Estilos específicos para a página de editar perfil */
 .edit-profile-container {
     max-width: 800px;
@@ -43,32 +152,22 @@
     min-height: 100px;
 }
 
-.edit-profile-container .button {
-    background-color: #7e3011ce;
-    color: #fff;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 5px;
+.edit-profile-container .submit-button,
+.edit-profile-container .cancel-button {
     display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
     text-align: center;
     border: none;
-}
-
-.edit-profile-container .button:hover {
-    background-color: #fdd663;
-    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .edit-profile-container .submit-button {
     background-color: #7e3011ce;
     color: #fff;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
 }
 
 .edit-profile-container .submit-button:hover {
@@ -79,16 +178,154 @@
 .edit-profile-container .cancel-button {
     background-color: #e9710f;
     color: #fff;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
 }
 
 .edit-profile-container .cancel-button:hover {
     background-color: #fdd663;
     color: #000;
+}
+
+/* Estilo para ocultar o input de arquivo nativo */
+.file-upload-container {
+    position: relative;
+    display: inline-block;
+}
+
+.file-upload-input {
+    display: none; /* Oculta o input de arquivo */
+}
+
+.file-upload-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #7e3011ce;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.file-upload-button:hover {
+    background-color: #f4c542;
+    border-color: black;
+}
+
+.file-upload-button:active {
+    background-color: #00408a;
+    border-color: #00408a;
+}
+
+/* CSS para a barra de pesquisa */
+#search-form {
+    display: flex;
+    align-items: center;
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 1rem auto; /* Centraliza o formulário horizontalmente */
+    padding: 0.5rem;
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5); /* Sombra leve amarela */
+    background-color: #fff; /* Cor de fundo do formulário */
+}
+
+#search-input {
+    flex: 1; /* Faz o campo de entrada ocupar o máximo de espaço disponível */
+    padding: 0.5rem 1rem; /* Espaçamento interno do campo de entrada */
+    border: 1px solid #f4c542; /* Borda amarela clara ao redor do campo de entrada */
+    border-radius: 5px 0 0 5px; /* Bordas arredondadas apenas no lado esquerdo */
+    font-size: 1rem; /* Tamanho da fonte */
+    outline: none; /* Remove a borda de foco padrão */
+    transition: border-color 0.3s ease; /* Transição suave para a cor da borda */
+}
+
+#search-input:focus {
+    border-color: #f7b82d; /* Cor da borda amarela ao focar no campo de entrada */
+}
+
+#search-form .input-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #f7b82d;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#search-form .input-button:hover {
+    background-color: #f4c542;
+}
+
+/* Contêiner dos ícones de mídias sociais */
+.social-media {
+    display: flex; /* Alinha os ícones em linha */
+    justify-content: center; /* Alinha os ícones horizontalmente ao centro */
+    gap: 15px; /* Espaço entre os ícones */
+    margin: 20px 0; /* Margem acima e abaixo do contêiner */
+}
+
+/* Estilo para os links dos ícones */
+.social-media a {
+    color: #e4cf10; /* Cor padrão dos ícones */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 24px; /* Tamanho dos ícones */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transições suaves para cor e transformações */
+}
+
+/* Estilo para os ícones ao passar o mouse */
+.social-media a:hover {
+    color: #007bff; /* Cor dos ícones ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho dos ícones ao passar o mouse */
+}
+
+/* Estilo para a seção de informações de contato */
+.contact-info {
+    max-width: 600px; /* Define a largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f4f4f4; /* Cor de fundo da seção */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor do contêiner */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilo para o parágrafo */
+.contact-info p {
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para o link de e-mail */
+.contact-info a {
+    color: #f04907b7; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Estilo do link ao passar o mouse */
+.contact-info a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilo geral para botões */
+.button {
+    padding: 0.5rem 1rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 0 5px 5px 0; /* Bordas arredondadas apenas no lado direito */
+    background-color: #f7b82d; /* Cor de fundo amarela do botão */
+    color: #fff; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor indicando que é clicável */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+
+.button:hover {
+    background-color: black;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05); 
 }

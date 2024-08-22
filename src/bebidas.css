@@ -12,7 +12,7 @@ header {
     color: #fff; /* Define a cor do texto como branco */
     padding: 10px; /* Adiciona 10px de preenchimento ao redor do conteúdo */
     text-align: center; /* Centraliza o texto */
-    margin: 1px 10px; /* Adiciona uma margem de 1px na parte superior e inferior e 10px nas laterais */
+    margin: 10px 10px; /* Adiciona uma margem de 1px na parte superior e inferior e 10px nas laterais */
 }
 
 /* Estiliza o título principal (h1) */
@@ -157,7 +157,7 @@ footer {
     position: relative; /* Define a posição do rodapé como relativa */
     width: 100%; /* Faz com que o rodapé ocupe toda a largura da tela */
     bottom: 0; /* Garante que o rodapé esteja alinhado ao fundo do contêiner pai (não sempre necessário se `position: relative` já estiver definido) */
-    margin: 1px 10px;  /* Adiciona uma margem de 1px na parte superior e inferior e 10px nas laterais */
+    margin: 10px 10px;  /* Adiciona uma margem de 1px na parte superior e inferior e 10px nas laterais */
 }
 
 

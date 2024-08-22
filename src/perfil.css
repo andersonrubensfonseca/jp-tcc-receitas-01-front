@@ -7,14 +7,14 @@ body {
     background-color: #f4f4f4;
     text-align: center;
 }
-header {
-    background: #f04907b7;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    margin: 1px 10px;
-   
-}
+    header {
+        background: #f04907b7;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        margin: 10px 10px;/* Adiciona uma margem de 1px na parte superior e inferior e 10px nas laterais */
+       
+    }
     nav {
         text-align: center;
         color: #7e3011ce;
@@ -98,6 +98,7 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
+    margin: 10px 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -164,7 +165,7 @@ header {
 
 .recipe-card h4 {
     font-size: large;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .recipe-card p {
@@ -187,14 +188,14 @@ header {
 }
 
 footer {
-    background: #f04907b7;
+    background: #e9710f;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 10px 0;
     position: relative;
     width: 100%;
     bottom: 0;
-    margin: 10px;
+     margin: 10px 10px;
 }
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -204,18 +205,39 @@ h1 {
     margin: 0;
 }
 
-.input-button {
-    background-color: #7e3011ce;
-    color: #fff;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 5px;
+.input-descript {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 6px;
     display: inline-block;
-    border: none;
+    border: black;
+    box-shadow:rgba(255, 204, 0, 0.5);
 }
-.input-button:hover {
-    background-color: #fdd663;
-}
+
+input[type="file"] {
+    display: none;  
+  }
+
+ label { 
+      padding: 10px 10px;
+      width:200px;
+      background: #7e3011ce;
+      color: #fff;
+      text-transform: uppercase;
+      margin-top: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      cursor: pointer;
+      transition: .5s;
+      border: 1px solid #333;
+      border-radius: 4rem;
+  }
+
+  label:hover{
+      color: #333;
+      background: #f4c542;
+  }
+
 
 .submit-button {
     background-color: #7e3011ce;
@@ -345,8 +367,22 @@ h2{
 }
 
 .button:hover {
-    background-color:black;
+    background-color:#f4c542;
     color: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     transform: scale(1.05); 
+}
+.button-submit{
+    padding: 0.5rem 1rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 0 5px 5px 0; /* Bordas arredondadas apenas no lado direito */
+    background-color: #f7b82d; /* Cor de fundo amarela do botão */
+    color: #fff; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor indicando que é clicável */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+.button-submit:hover {
+    background-color: #f4c542;
+   
 }

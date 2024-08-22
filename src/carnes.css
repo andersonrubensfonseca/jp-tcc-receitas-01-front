@@ -11,7 +11,7 @@ header {
     color: #fff;
     padding: 10px;
     text-align: center;
-    margin: 1px 10px; /* Adiciona uma margem de 1px na parte superior e inferior e 10px nas laterais */
+    margin: 10px 10px;/* Adiciona uma margem de 1px na parte superior e inferior e 10px nas laterais */
    
 }
 
@@ -140,7 +140,7 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
-    margin: 1px 10px;  /* Adiciona uma margem de 1px na parte superior e inferior e 10px nas laterais */
+    margin: 10px 10px;  /* Adiciona uma margem de 1px na parte superior e inferior e 10px nas laterais */
 }
 /* Contêiner dos ícones de mídias sociais */
 .social-media {

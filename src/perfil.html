@@ -5,387 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil - Delícias na Cozinha</title>
     <link rel="stylesheet" href="./perfil.css">
-    <link rel="stylesheet" href="./home.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* Estilos gerais para a página de perfil */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-
-        header {
-            background: #f04907b7;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            margin: 1px 10px;
-        }
-
-        nav {
-            text-align: center;
-            color: #7e3011ce;
-            font-weight: 500;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            margin-bottom: 20px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            padding: 5px 10px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-            background-color: #fdd663;
-            color: #fff;
-        }
-
-        .menu {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .menu-item {
-            position: relative;
-            display: inline-block;
-            padding: 10px 20px;
-            color: #fff;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-right: 0px;
-            margin-bottom: 10px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .menu-item:hover {
-            background-color: #fdd663;
-            color: #fff;
-        }
-
-        .dropdown {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            z-index: 1;
-        }
-
-        .dropdown a {
-            display: block;
-            padding: 10px 20px;
-            color: #333;
-            text-decoration: none;
-        }
-
-        .dropdown a:hover {
-            background-color: #fdd663;
-            color: #333;
-        }
-
-        .menu-item:hover .dropdown {
-            display: block;
-        }
-
-        .profile-header {
-            background: #7e3011ce;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-
-        .profile-info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-
-        .profile-picture {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-
-        .profile-info h2 {
-            font-size: xx-large;
-            margin: 10px 0;
-            align-items: center;
-        }
-
-        .profile-info p {
-            font-size: large;
-            color: #fff;
-            margin: 0 0 20px;
-        }
-
-        .user-recipes {
-            padding: 20px;
-            background-color: #f4f4f4;
-            font-family: Arial, sans-serif;
-        }
-
-        .user-recipes h3 {
-            font-size: x-large;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .recipes-container {
-            display: flex;
-            flex-wrap: wrap; /* Permite que os cartões quebrem para a linha seguinte se não houver espaço suficiente */
-            gap: 20px; /* Espaçamento entre os cartões */
-            justify-content: flex-end; /* Alinha os cartões ao centro */
-        }
-
-        .recipe-card {
-            flex: 1 1 calc(33.333% - 20px); /* Faz com que os cartões ocupem aproximadamente 1/3 da largura do container, menos o espaço de gap */
-            box-sizing: border-box; /* Inclui o padding e border no cálculo da largura total */
-            border: 1px solid #ddd; /* Adiciona uma borda leve ao redor do cartão */
-            border-radius: 8px; /* Arredonda os cantos do cartão */
-            overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites do cartão */
-            padding: 10px; /* Adiciona um pouco de espaçamento interno ao cartão */
-            text-align: center; /* Centraliza o texto dentro do cartão */
-        }
-
-        .recipe-card img {
-            max-width: 100%; /* Garante que a imagem não ultrapasse a largura do cartão */
-            height: auto; /* Mantém a proporção da imagem */
-            border-radius: 4px; /* Arredonda os cantos da imagem */
-        }
-
-        .recipe-card h4 {
-            font-size: large;
-            margin: 10px 0;
-        }
-
-        .recipe-card p {
-            font-size: medium;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .recipe-card .button {
-            background-color: #7e3011ce;
-            color: #fff;
-            padding: 10px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-        }
-
-        .recipe-card .button:hover {
-            background-color: #fdd663;
-        }
-
-        footer {
-            background: #f04907b7;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            width: 100%;
-            bottom: 0;
-            margin: 10px;
-        }
-
-        h1 {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: xx-large;
-            text-align: center;
-            text-transform: uppercase;
-            margin: 0;
-        }
-
-        .input-button {
-            background-color: #7e3011ce;
-            color: #fff;
-            padding: 10px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            border: none;
-        }
-
-        .input-button:hover {
-            background-color: #fdd663;
-        }
-
-        .submit-button {
-            background-color: #7e3011ce;
-            color: #fff;
-            padding: 5px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-        }
-
-        .submit-button:hover {
-            background-color: #fdd663;
-        }
-
-        @media (max-width: 768px) {
-            .menu {
-                flex-direction: column;
-            }
-        }
-
-        .recipes-container {
-            flex-direction: column;
-        }
-
-        .button, .login-button {
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .button:hover, .login-button:hover {
-            background-color: #e4cf10;
-            transform: scale(1.05);
-        }
-
-        p {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: larger;
-        }
-
-        h2 {
-            text-align: center;
-        }
-
-        /* Contêiner dos ícones de mídias sociais */
-        .social-media {
-            display: flex; /* Alinha os ícones em linha */
-            justify-content: center; /* Alinha os ícones horizontalmente ao centro */
-            gap: 15px; /* Espaço entre os ícones */
-            margin: 20px 0; /* Margem acima e abaixo do contêiner */
-        }
-
-        /* Estilo para os links dos ícones */
-        .social-media a {
-            color: #e4cf10; /* Cor padrão dos ícones */
-            text-decoration: none; /* Remove o sublinhado dos links */
-            font-size: 24px; /* Tamanho dos ícones */
-            transition: color 0.3s ease, transform 0.3s ease; /* Transições suaves para cor e transformações */
-        }
-
-        /* Estilo para os ícones ao passar o mouse */
-        .social-media a:hover {
-            color: #007bff; /* Cor dos ícones ao passar o mouse */
-            transform: scale(1.1); /* Aumenta o tamanho dos ícones ao passar o mouse */
-        }
-
-        /* Estilo para a seção de informações de contato */
-        .contact-info {
-            max-width: 600px; /* Define a largura máxima do contêiner */
-            margin: 0 auto; /* Centraliza o contêiner horizontalmente */
-            padding: 20px; /* Espaçamento interno */
-            background-color: #f4f4f4; /* Cor de fundo da seção */
-            border-radius: 8px; /* Bordas arredondadas */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor do contêiner */
-            text-align: center; /* Alinha o texto ao centro */
-        }
-
-        /* Estilo para o parágrafo */
-        .contact-info p {
-            font-size: 16px; /* Tamanho da fonte */
-            color: #333; /* Cor do texto */
-        }
-
-        /* Estilo para o link de e-mail */
-        .contact-info a {
-            color: #f04907b7; /* Cor do texto do link */
-            text-decoration: none; /* Remove o sublinhado do link */
-            font-weight: bold; /* Deixa o texto em negrito */
-        }
-
-        /* Estilo do link ao passar o mouse */
-        .contact-info a:hover {
-            text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-        }
-
-        /* CSS para a barra de pesquisa */
-        #search-form {
-            display: flex;
-            align-items: center;
-            max-width: 600px; /* Largura máxima do formulário */
-            margin: 1rem auto; /* Centraliza o formulário horizontalmente */
-            padding: 0.5rem;
-            border-radius: 5px; /* Bordas arredondadas */
-            box-shadow: 0 0 10px rgba(255, 204, 0, 0.5); /* Sombra leve amarela */
-            background-color: #fff; /* Cor de fundo do formulário */
-        }
-
-        #search-input {
-            flex: 1; /* Faz o campo de entrada ocupar o máximo de espaço disponível */
-            padding: 0.5rem 1rem; /* Espaçamento interno do campo de entrada */
-            border: 1px solid #f4c542; /* Borda amarela clara ao redor do campo de entrada */
-            border-radius: 5px 0 0 5px; /* Bordas arredondadas apenas no lado esquerdo */
-            font-size: 1rem; /* Tamanho da fonte */
-            outline: none; /* Remove a borda de foco padrão */
-            transition: border-color 0.3s ease; /* Transição suave para a cor da borda */
-        }
-
-        #search-input:focus {
-            border-color: #f7b82d; /* Cor da borda amarela ao focar no campo de entrada */
-        }
-
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #f04907b7;
-            color: black;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 16px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-weight: bold;
-            text-align: center;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-
-        .button:hover {
-            background-color: black;
-            color: black;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transform: scale(1.05);
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1>Delícias na Cozinha</h1>
+        <img src="imagens/logo2.png" alt="Delícias na Cozinha" width="350" height="350">
         <nav>
             <a href="home.html">Início</a>
             <div class="menu-item">
-                <h4>Receitas</h4>
+                Receitas
                 <div class="dropdown">
-                    <a href="receitasdoces.html">Receitas Doces</a>
-                    <a href="receitassalgadas.html">Receitas Salgadas</a>
-                    <a href="carnes.html">Carnes</a>
+                  <a href="receitasdoces.html">Receitas Doces</a>
+                    <a href="./receitassalgadas.html">Receitas Salgadas</a>
+                    <a href="./carnes.html">Receitas com Carnes</a>
+                    <a href="./rec_internacionais.html">Receitas Internacionais</a>
+                    <a href="./bebidas.html">Receitas de Bebidas</a>
                 </div>
             </div>
             <a href="sobre.html">Sobre</a>
-            <a href="profile.html">Perfil</a>
-            <form id="search-form" action="https://www.example.com/search" method="get">
+            <a href="login.html">Login</a>
+            <form id="search-form" action="https://www.###.com/search" method="get">
                 <input type="text" id="search-input" name="q" placeholder="Buscar..." required>
-                <button type="submit">Buscar</button>
+                <button class= "button-submit">Buscar</button>
             </form>
         </nav>
     </header>
@@ -394,9 +35,13 @@
         <section class="profile-header">
             <div class="profile-info">
                 <img src="https://via.placeholder.com/150" alt="Foto de Perfil" class="profile-picture">
+                <input type="file" name="file" id="arquivo" class="inputfile" />
+                <label for="arquivo">Escolher Arquivo</label>
                 <h2>Nome do Usuário</h2>
-                <p>Descrição do usuário ou uma curta biografia.</p>
-                <a href="editar_perfil.html" class="button">Editar Perfil</a>
+                <input type="input" id="text" name="text" accept="text" class="input-descript" />
+                <br>
+                <br>
+                <a href="edit_perfil.html" class="button">Editar Perfil</a>
             </div>
         </section>
 
@@ -404,41 +49,61 @@
             <h3>Minhas Receitas</h3>
             <div class="recipes-container">
                 <div class="recipe-card">
-                    <form action="upload" method="post" enctype="multipart/form-data">
+                    <form action="localhost:3306/upload" method="post" enctype="multipart/form-data">
+                        <br>
                         <img src="https://via.placeholder.com/200" alt="Receita 1">
-                        <input type="file" id="imagem" name="imagem" accept="image/*" class="input-button" />
-                        <button type="submit" class="submit-button">Enviar</button>
+                        <br>
+                        <br>
+                        <input type="file" name="file" id="arquivo" class="input-lefi"/>
+                        <label for="arquivo">Escolher Arquivo</label>
+                        <br>
+                        <br>
                         <h4>Nome da Receita 1</h4>
-                        <p>Descrição curta da receita 1.</p>
-                        <a href="#" class="button">Ver Receita</a>
+                        <input type="input" id="text" name="text" accept="text" class="input-descript" />
+                        <br>
+                        <br>
+                        <button type="submit" class="submit-button">Enviar</button>
+                        <br>
+                        <br>
+                        <button href="#" class="button">Ver Receita</button>
                     </form>
                 </div>
                 <div class="recipe-card">
-                    <form action="upload" method="post" enctype="multipart/form-data">
+                    <form action="localhost:3306/upload" method="post" enctype="multipart/form-data">
+                        <br>
                         <img src="https://via.placeholder.com/200" alt="Receita 2">
-                        <input type="file" id="imagem" name="imagem" accept="image/*" class="input-button" />
-                        <button type="submit" class="submit-button">Enviar</button>
+                        <br>
+                        <br>
+                        <input type="file" name="file" id="aquivo" class="input-lefi" />
+                        <label for="arquivo">Escolher Arquivo</label>
+                        <br>
+                        <br>
+                        
                         <h4>Nome da Receita 2</h4>
-                        <p>Descrição curta da receita 2.</p>
-                        <a href="#" class="button">Ver Receita</a>
+                        <input type="input" id="text" name="text" accept="text" class="input-descript" />
+                        <br>
+                        <br>
+                        <button type="submit" class="submit-button">Enviar</button>
+                        <br>
+                        <br>
+                        <button href="#" class="button">Ver Receita</button>
                     </form>
                 </div>
                 <!-- Adicionar mais cartões de receita conforme necessário -->
             </div>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2024 Delícias na Cozinha - Todos os direitos reservados</p>
         <p>Siga-nos nas redes sociais:</p>
         <div class="social-media">
-            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <a href="#" target="_blank" aria-label="Facebook">
                 <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+            <a href="#" target="_blank" aria-label="Instagram">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://x.com" target="_blank" aria-label="X">
+            <a href="#" target="_blank" aria-label="X">
                 <i class="fab fa-x"></i>
             </a>
         </div>
@@ -446,8 +111,8 @@
             <p>Entre em contato: <a href="mailto:contato@deliciasnacozinha.com">contato@deliciasnacozinha.com</a></p>
         </div>
     </footer>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <script src="./scripts.js"></script>
+   <script src="script.js"></script>
+</head>
 </body>
 </html>
