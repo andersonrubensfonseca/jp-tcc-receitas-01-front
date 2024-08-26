@@ -12,7 +12,7 @@ header {
     color: #fff;
     padding: 10px;
     text-align: center;
-    margin: 1px 10px;
+    margin: 10px 10px;
 }
 
 nav {
@@ -104,7 +104,8 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
-    margin: 10px;
+    font-weight: bold;
+    margin: 10px 10px;  /* Adiciona uma margem de 1px na parte superior e inferior e 10px nas laterais */
 }
 
 /* Estilos específicos para a página de editar perfil */
@@ -328,4 +329,9 @@ footer {
     color: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     transform: scale(1.05); 
+}
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
 }

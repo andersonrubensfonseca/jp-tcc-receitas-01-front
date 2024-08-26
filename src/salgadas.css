@@ -236,21 +236,25 @@ footer {
 }
 
 .stars {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
+    font-size: 2em;
+    cursor: pointer;
     unicode-bidi: bidi-override;
     direction: rtl;
 }
 
 .stars span {
-    font-size: 24px;
-    cursor: pointer;
+    color: #ddd;
 }
 
-.stars span:hover {
+.stars span:hover,
+.stars span:hover ~ span {
     color: gold;
 }
+
+.stars span.selected {
+    color: gold;
+}
+
 /* CSS para a barra de pesquisa */
 #search-form {
     display: flex;

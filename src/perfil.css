@@ -188,14 +188,15 @@ body {
 }
 
 footer {
-    background: #e9710f;
+    background: #f04907b7;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
     position: relative;
     width: 100%;
     bottom: 0;
-     margin: 10px 10px;
+    font-weight: bold;
+    margin: 10px 10px;  /* Adiciona uma margem de 1px na parte superior e inferior e 10px nas laterais */
 }
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

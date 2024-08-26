@@ -1,6 +1,5 @@
 /* home.css */
 
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -189,6 +188,7 @@ p {
 /* Estilo da avaliação e Estrelas */
 .rating {
     margin: 20px 0;
+    color:black;
 }
 
 /* Estilo da avaliação e Estrelas*/
